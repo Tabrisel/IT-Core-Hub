@@ -33,6 +33,10 @@ nav .nav__list a {
   color: var(--color-headers);
 }
 
+nav .nav__list li:hover a {
+  color: var(--color-primary);
+}
+
 .logo {
   width: var(--logo-width);
   height: var(--logo-height);

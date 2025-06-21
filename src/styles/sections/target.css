@@ -13,7 +13,7 @@ div.hero {
   }
 
   h1>span {
-    color: var(--color-accent-1);
+    color: var(--color-primary);
     font-size: inherit;
   }
 
@@ -30,15 +30,11 @@ div .target-form {
 
   p {
     font-weight: 500;
-    color: var(--color-accent-text);
+    color: var(--color-text-primary);
   }
 
   form {
     width: 100%;
-
-    input {
-      width: fit-content;
-    }
   }
 }
 

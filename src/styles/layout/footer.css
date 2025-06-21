@@ -53,6 +53,10 @@ footer .nav__list a {
   font-weight: var(--font-weight-light);
 }
 
+footer .nav__list li:hover a {
+  color: var(--color-primary);
+}
+
 @media (min-width: 1800px) {
   footer .navigations {
     gap: 120px;

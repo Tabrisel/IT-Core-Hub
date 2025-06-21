@@ -100,7 +100,7 @@
   .box {
     width: 80px;
     height: 80px;
-    background: var(--color-accent-1);
+    background: var(--color-primary);
     position: absolute;
     right: 48px;
     top: 48px;
@@ -108,7 +108,7 @@
   }
 
   .item:nth-of-type(7) .box {
-    background: var(--color-light-2);
+    background: var(--color-light-secondary);
     background-image: url('/icons/graduationCap.svg');
     background-repeat: no-repeat;
     background-position: center;
@@ -116,7 +116,7 @@
   }
 
   .item:nth-of-type(8) .box {
-    background: var(--color-light-3);
+    background: var(--color-light-tertiary);
     background-image: url('/icons/calendar.svg');
     background-repeat: no-repeat;
     background-position: center;
@@ -124,7 +124,7 @@
   }
 
   .item:nth-of-type(9) .box {
-    background: var(--color-light);
+    background: var(--color-light-primary);
     background-image: url('/icons/money.svg');
     background-repeat: no-repeat;
     background-position: center;

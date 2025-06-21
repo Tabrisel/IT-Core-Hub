@@ -43,7 +43,7 @@
   .icon {
     width: 80px;
     height: 80px;
-    background: var(--color-light-2);
+    background: var(--color-light-secondary);
     border-radius: 12px;
     position: absolute;
     top: 48px;
@@ -51,7 +51,7 @@
   }
 
   .box-cards .card:nth-of-type(1) .icon {
-    background: var(--color-light);
+    background: var(--color-light-primary);
     background-image: url('/icons/handshake.svg');
     background-repeat: no-repeat;
     background-position: center;
@@ -59,7 +59,7 @@
   }
 
   .box-cards .card:nth-of-type(2) .icon {
-    background: var(--color-light-3);
+    background: var(--color-light-tertiary);
     background-image: url('/icons/case.svg');
     background-repeat: no-repeat;
     background-position: center;
@@ -67,7 +67,7 @@
   }
 
   .box-cards .card:nth-of-type(3) .icon {
-    background: var(--color-light-2);
+    background: var(--color-light-secondary);
     background-image: url('/icons/greetings.svg');
     background-repeat: no-repeat;
     background-position: center;
@@ -75,7 +75,7 @@
   }
 
   .box-cards .card:nth-of-type(4) .icon {
-    background: var(--color-light-3);
+    background: var(--color-light-tertiary);
     background-image: url('/icons/cart.svg');
     background-repeat: no-repeat;
     background-position: center;
@@ -83,7 +83,7 @@
   }
 
   .box-cards .card:nth-of-type(5) .icon {
-    background: var(--color-light-2);
+    background: var(--color-light-secondary);
     background-image: url('/icons/question.svg');
     background-repeat: no-repeat;
     background-position: center;
@@ -91,7 +91,7 @@
   }
 
   .box-cards .card:nth-of-type(6) .icon {
-    background: var(--color-light);
+    background: var(--color-light-primary);
     background-image: url('/icons/chats.svg');
     background-repeat: no-repeat;
     background-position: center;
