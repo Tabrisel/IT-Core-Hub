@@ -1,0 +1,461 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+  <header class="container">
+     <div class="logo"></div>
+     <nav>
+        <ul class="nav__list">
+        <li><a href="#suitable-for">Для кого подходит</a></li>
+        <li><a href="#our-approach">Наш подход</a></li>
+        <li><a href="#process-study">Процесс обучения</a></li>
+        <li><a href="#map">Дорожная карта</a></li>
+        <li><a href="#team">Команда</a></li>
+        <li><a href="#tariffs">Тарифы</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        </ul>
+        <button>Записаться</button>
+     </nav>
+  </header>
+
+  <main class="container">
+     <div id="target">
+        <div class="target-container">
+          <div class="target-tags">
+            <div class="tags">Бесплатное мок-интервью</div>
+            <div class="tags">Персональный ментор</div>
+            <div class="tags">Поддержка на испытательном сроке</div>
+          </div>
+          <div class="hero">
+            <h1><span>Оффер</span> под ключ</h1>
+            <h3>Поможем быстро устроиться <br> на работу в IT c нуля</h3>
+          </div>
+          <div class="specialists-from">
+            <div>Специалисты из</div>
+            <div class="companies">
+              <div class="company-logo"></div>
+              <div class="company-logo"></div>
+              <div class="company-logo"></div>
+              <div class="company-logo"></div>
+              <div class="company-logo"></div>
+            </div>
+          </div>
+        </div>
+        <div class="target-form">
+          <h3>Оставить заявку</h3>
+          <p>Мы напишем первыми!</p>
+
+          <form>
+            <label for="name">Имя</label>
+            <input type="text" id="name" name="name" placeholder="Имя" required />
+
+            <div class="row">
+              <div class="input-group">
+                <label for="telegram">Телеграмм</label>
+                <input type="text" id="telegram" name="telegram" placeholder="Телеграм" />
+
+                <span class="or-text">или</span>
+
+                <label for="phone">Телефон</label>
+                <input type="tel" id="phone" name="phone" placeholder="Телефон" />
+              </div>
+            </div>
+
+            <label for="email">Электронная почта</label>
+            <input type="email" id="email" name="email" placeholder="Электронная почта" />
+
+            <label for="direction">Направление</label>
+            <input type="text" id="direction" name="direction" placeholder="Направление" />
+
+            <label for="comment">Комментарий</label>
+            <textarea id="comment" name="comment" rows="4" placeholder="Комментарий"></textarea>
+
+            <button type="submit">Отправить</button>
+          </form>
+        </div>
+     </div>
+     <div id="suitable-for">
+        <h2 class="title">Для кого подходит</h2>
+        <div class="grid">
+          <div class="item a">Действующие студенты<br><small>Любое направление</small></div>
+          <div class="item b">С опытом работы в других сферах<br><small>не IT</small></div>
+          <div class="item c">Действующие БА/CA<br><small>Intern, Junior, middle</small></div>
+          <div class="item d">Выпускники бакалавриата и выше<br><small>любое направление</small></div>
+          <div class="item e">После массовых курсов<br><small>Skillbox, Яндекс, Практикум и т.д.</small></div>
+          <div class="item f">Тестировщики и смежные IT профессии</div>
+          <div class="item g"><div class="box"></div>Можно без опыта<br><small>Наши ученики без опыта зарабатывают на 70% больше...</small></div>
+          <div class="item h"><div class="box"></div>1–5 недель до оффера<br><small>90% участников программы устраиваются за этот срок</small></div>
+          <div class="item i"><div class="box"></div>Зарплата от 150 до 800 тыс<br><small>Более 100 участников уже вышли на такой доход</small></div>
+        </div>
+     </div>
+     <div id="our-approach">
+        <div class="title">
+          <p>Почему мы делаем круче всех</p>
+          <h2>Наш подход</h2>
+        </div>
+        <div class="box-cards">
+          <div class="card">
+            <div class="icon"></div>
+            <h4>Мы проведем тебя до оффера</h4>
+            <p>Наши ученики без опыта зарабатывают на 70% больше, чем средняя рыночная зарплата</p>
+          </div>
+          <div class="card">
+            <div class="icon"></div>
+            <h4>Гарантия трудоустройства</h4>
+            <p>Наши ученики без опыта зарабатывают на 70% больше, чем средняя рыночная зарплата</p>
+          </div>
+          <div class="card">
+            <div class="icon"></div>
+            <h4>Поддержка после испытательного срока</h4>
+            <p>Мы помогаем обжиться на новом месте работы. Если ты не пройдёшь испытательный срок, мы поможем тебе снова найти подходящую работу.</p>
+          </div>
+          <div class="card">
+            <div class="icon"></div>
+            <h4>Хватит тратить деньги на курсы</h4>
+            <p>Наши ученики без опыта зарабатывают на 70% больше, чем средняя рыночная зарплата.</p>
+          </div>
+          <div class="card">
+            <div class="icon"></div>
+             <h4>База вопросов</h4>
+            <p>Наши ученики без опыта зарабатывают на 70% больше, чем средняя рыночная зарплата.</p>
+          </div>
+          <div class="card">
+            <div class="icon"></div>
+            <h4>Чаты сообщества</h4>
+            <p>Наши ученики без опыта зарабатывают на 70% больше, чем средняя рыночная зарплата.</p>
+          </div>    
+        </div>
+     </div>
+     <div id="process-study">
+        <h2>Процесс обучения</h2>
+        <div class="cards">
+          <div class="card special">
+            <h4>Скрининг</h4>
+            <p>После заполнения формы с тобой свяжется наш специалист и проведёт бесплатное мок-интервью для оценки начальных знаний.
+При успешном прохождении интервью мы пригласим тебя на следующий этап.</p>
+          </div>
+          <div class="card">
+            <h4>Подготовка</h4>
+            <p>До получения оффера ты будешь работать с персональным ментором.
+Ментор составит индивидуальный план обучения, предоставит обучающие материалы и подготовит к собеседованиям, а карьерный консультант поможет составить правильное резюме.</p>
+          </div>
+          <div class="card">
+            <h4>Оффер</h4>
+            <p>После получения оффера ты получишь финальные наставления от ментора и начнёшь работать.
+В течение испытательного срока ментор остаётся с тобой на связи.</p>
+          </div>
+        </div>
+     </div>
+     <div id="map">
+        <h2>Дорожная карта</h2>
+        <picture>
+        <!-- Mobile portrait (360px и меньше) -->
+        <source srcset="/images/map_mobile.png" media="(max-width: 480px)">
+        
+        <!-- Small tablet (728px) -->
+        <source srcset="/images/map_tablet-small.png" media="(max-width: 768px)">
+        
+        <!-- Tablet (1024px) -->
+        <source srcset="/images/map_tablet.png" media="(max-width: 1200px)">
+
+        <!-- Desktop (по умолчанию 1920+) -->
+        <img src="/images/map_desktop.png" alt="Дорожная карта" loading="lazy">
+      </picture>
+     </div>
+     <div id="team">
+      <h2>Команда</h2>
+      <div class="team-wrapper">
+        <div class="team">
+          <div class="member">
+            <div class="box">
+              <div class="box-name">
+                <p>Системный Аналитик WB.tech</p>
+                <h5>Анастасия Глазова</h5>
+              </div>
+              <div class="box-wb">
+                <div class="wb-icon"></div>
+              </div>
+            </div>
+          </div>
+          <div class="member">
+            <div class="box">
+              <div class="box-name">
+                <p>Системный Аналитик WB.tech</p>
+                <h5>Анастасия Глазова</h5>
+              </div>
+              <div class="box-wb">
+                <div class="wb-icon"></div>
+              </div>
+            </div>
+          </div>
+          <div class="member">
+            <div class="box">
+              <div class="box-name">
+                <p>Системный Аналитик WB.tech</p>
+                <h5>Анастасия Глазова</h5>
+              </div>
+              <div class="box-wb">
+                <div class="wb-icon"></div>
+              </div>
+            </div>
+          </div>
+          <div class="member">
+            <div class="box">
+              <div class="box-name">
+                <p>Системный Аналитик WB.tech</p>
+                <h5>Анастасия Глазова</h5>
+              </div>
+              <div class="box-wb">
+                <div class="wb-icon"></div>
+              </div>
+            </div>
+          </div>
+          <div class="member">
+            <div class="box">
+              <div class="box-name">
+                <p>Системный Аналитик WB.tech</p>
+                <h5>Анастасия Глазова</h5>
+              </div>
+              <div class="box-wb">
+                <div class="wb-icon"></div>
+              </div>
+            </div>
+          </div>
+          <div class="member">
+            <div class="box">
+              <div class="box-name">
+                <p>Системный Аналитик WB.tech</p>
+                <h5>Анастасия Глазова</h5>
+              </div>
+              <div class="box-wb">
+                <div class="wb-icon"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="skills">
+      <h2>Приобретаемые навыки</h4>
+      <div class="box-skills">
+        <div class="first-row">
+          <div class="card">Atlassian Jira</div>
+          <div class="card">Atlassian Confluence</div>
+          <div class="card">API</div>
+          <div class="card">REST</div>
+          <div class="card">Atlassian Confluence</div>
+        </div>
+        <div class="second-row">
+          <div class="card">SOAP</div>
+          <div class="card">UML</div>
+          <div class="card">Git</div>
+          <div class="card">SQL</div>
+          <div class="card">Kibana</div>
+          <div class="card">Kafka</div>
+          <div class="card">RabbitMQ</div>
+        </div>
+      </div>
+    </div>
+    <div id="tariffs">
+      <h2>Тарифы</h2>
+      <div class="box">
+        <div class="proposal">
+          <div class="about">
+            <h4>Трудоустройство на работу</h4>
+            <p>Без дообучения</p>
+          </div>
+          <div class="prices">
+            <div class="boxes">
+              <div>
+                <h4>0 ₽</h4>
+                <p>В начале</p>
+              </div>
+              <div>
+                <h4>150%</h4>
+                <p>От первой зарплаты</p>
+              </div>
+            </div>
+            <button>Записаться</button>
+          </div>
+        </div>
+        <div class="proposal special">
+          <div class="about">
+            <h4>Обучение + <span>Трудоустройство</span></h4>
+            <p>Полная программа с гарантией трудоустройства</p>
+          </div>
+          <div class="prices">
+            <div class="boxes">
+              <div>
+                <h4>50 000 ₽</h4>
+                <p>В начале</p>
+              </div>
+              <div>
+                <h4>50%</h4>
+                <p>От первой зарплаты</p>
+              </div>
+            </div>
+            <button>Записаться</button>
+          </div>
+        </div>
+        <div class="proposal">
+          <div class="about">
+            <h4>Повышение грейда</h4>
+            <p>Junior → Middle → Senior</p>
+          </div>
+          <div class="prices">
+            <div class="boxes">
+              <div>
+                <h4 class="crossed-out">120000 ₽</h4>
+                <p>вместое полной оплаты</p>
+              </div>
+              <div>
+                <h4>9990 ₽</h4>
+                <p>От первой зарплаты</p>
+              </div>
+            </div>
+            <button>Записаться</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="second-form">
+      <div class="target-form">
+          <h3>Оставить заявку</h3>
+          <p>Мы напишем первыми!</p>
+
+          <form>
+            <label for="name">Имя</label>
+            <input type="text" id="name" name="name" placeholder="Имя" required />
+
+            <div class="row">
+              <div class="input-group">
+                <label for="telegram">Телеграмм</label>
+                <input type="text" id="telegram" name="telegram" placeholder="Телеграм" />
+
+                <span class="or-text">или</span>
+
+                <label for="phone">Телефон</label>
+                <input type="tel" id="phone" name="phone" placeholder="Телефон" />
+              </div>
+            </div>
+
+            <label for="email">Электронная почта</label>
+            <input type="email" id="email" name="email" placeholder="Электронная почта" />
+
+            <label for="direction">Направление</label>
+            <input type="text" id="direction" name="direction" placeholder="Направление" />
+
+            <label for="comment">Комментарий</label>
+            <textarea id="comment" name="comment" rows="4" placeholder="Комментарий"></textarea>
+
+            <button type="submit">Отправить</button>
+          </form>
+        </div>
+    </div>
+    <div id="faq">
+      <h2>FAQ</h2>
+      <div class="questions">
+        <div class="question-card">
+          <div class="text-card">Сколько длиться обучение?</div>
+          <div class="arrow"></div>
+        </div>
+        <div class="question-card">
+          <div class="text-card">Устроюсь на работу, что дальше? </div>
+          <div class="arrow"></div>
+        </div>
+        <div class="question-card">
+          <div class="text-card">На какую зарплату устроюсь?</div>
+          <div class="arrow"></div>
+        </div>
+        <div class="question-card">
+          <div class="text-card">Какой уровень знаний нужен для начала обучения?</div>
+          <div class="arrow"></div>
+        </div>
+        <div class="question-card">
+          <div class="text-card">Есть ли поддержка после обучения?</div>
+          <div class="arrow"></div>
+        </div>
+      </div>
+    </div>
+    <div id="subscribe">
+      <h2>Подпишись</h2>
+      <div class="socials">
+        <div class="social-card">
+          <div class="social-icon"></div>
+          <h4>Лучший ютуб канал на свете</h4>
+          <p>100к подписчиков</p>
+        </div>
+        <div class="social-card">
+          <div class="social-icon"></div>
+          <h4>Телега для настоящих IT гуру</h4>
+          <p>23к подписчиков</p>
+        </div>
+        <div class="social-card">
+          <div class="social-icon"></div>
+          <h4>Boosty для смышленных ребят</h4>
+          <p>23к подписчиков</p>
+        </div>
+        <div class="social-card">
+          <div class="social-icon"></div>
+          <h4>Инстаграмм</h4>
+          <p>23к подписчиков</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="container">
+    <div class="footer-hero">
+      <div class="logo"></div>
+      <h4>Поможем быстро устроиться на работу в IT с нуля</h4>
+    </div>
+    <div class="navigations">
+      <div class="anchors">
+       <nav>
+        <h5>Разделы</h5>
+        <ul class="nav__list">
+        <li><a href="#suitable-for">Для кого подходит</a></li>
+        <li><a href="#our-approach">Наш подход</a></li>
+        <li><a href="#process-study">Процесс обучения</a></li>
+        <li><a href="#map">Дорожная карта</a></li>
+        <li><a href="#team">Команда</a></li>
+        <li><a href="#tariffs">Тарифы</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        </ul>
+     </nav>
+    </div>
+    <div class="socials">
+      <nav>
+        <h5>Наше коммюнити</h5>
+        <ul class="nav__list">
+        <li><a href="#">Telegram</a></li>
+        <li><a href="#">Youtube</a></li>
+        <li><a href="#">Boosty</a></li>
+        <li><a href="#">Instagram</a></li>
+        </ul>
+     </nav>
+    </div>
+    <div class="documents">
+      <nav>
+        <h5>Документы</h5>
+        <ul class="nav__list">
+        <li><a href="#">Политика конфиденциальности</a></li>
+        <li><a href="#">Условия использования</a></li>
+        <li><a href="#">Настройки файлов cookie</a></li>
+        </ul>
+     </nav>
+    </div>
+    </div>
+    <div class="roots">
+      © <span id="current-year"></span> ИП Глазова Анастасия Павловна. Все права защищены.
+    </div>
+  </footer>
+  <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
