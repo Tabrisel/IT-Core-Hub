@@ -1,0 +1,48 @@
+#skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 96px 0;
+  margin: 96px auto 24px;
+  background-image: linear-gradient(to right, #FFC9A3, #E9EBF2);
+  border-radius: 16px;
+}
+
+.box-skills {
+  padding-top: 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  .first-row,
+  .second-row {
+    display: flex;
+    gap: 10px;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+
+  .card {
+    padding: 24px;
+    width: 100%;
+    text-align: center;
+    background: var(--color-card);
+    border-radius: 16px;
+    box-sizing: border-box;
+    font-size: 32px;
+    color: #000000;
+    text-wrap: nowrap;
+  }
+
+  @media (min-width: 1900px) {
+
+    .first-row,
+    .second-row {
+      gap: 20px;
+    }
+
+    .card {
+      padding: 48px;
+    }
+  }
+}

@@ -1,0 +1,80 @@
+#tariffs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 96px auto 24px;
+  max-width: 1560px;
+  width: 100%;
+
+  .box {
+    padding-top: 48px;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 31px;
+    justify-content: space-between;
+  }
+
+  .proposal {
+    background: var(--color-card);
+    box-sizing: border-box;
+    border-radius: 16px;
+    padding: 32px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    span {
+      color: var(--color-accent-1);
+    }
+
+    h4 {
+      color: var(--color-dark);
+    }
+  }
+
+  .proposal.special {
+    border: 2px solid var(--color-accent-1);
+  }
+
+  @media (min-width: 1900px) {
+    .proposal {
+      padding: 48px;
+    }
+  }
+
+  .about {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    p {
+      font-size: 20px;
+    }
+  }
+
+  .prices {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 425px;
+    width: 100%;
+
+    .crossed-out {
+      text-decoration: line-through;
+      color: var(--color-dark-3);
+    }
+
+    p {
+      font-size: 20px;
+      margin-bottom: 0;
+    }
+
+    .boxes {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+}

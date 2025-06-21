@@ -1,0 +1,15 @@
+#map {
+  display: flex;
+  flex-direction: column;
+  padding-top: 96px;
+  align-items: center;
+}
+
+#map img {
+  max-width: 1820px;
+  width: 100%;
+  padding-top: 48px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}

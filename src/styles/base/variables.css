@@ -1,0 +1,104 @@
+:root {
+  /* Typography */
+  --font-family-primary: 'Inter', sans-serif;
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  --font-size-xs: 0.875em;
+  --font-size-sm: 1em;
+  --font-size-base: 1.25em;
+  --font-size-lg: 1.5em;
+  --font-size-xl: 2em;
+  --font-size-2xl: 2.25em;
+  --font-size-3xl: 3.375em;
+  --font-size-4xl: 5.875em;
+
+  --line-height-tight: 1;
+  --line-height-normal: 1.5;
+
+  /* Colors */
+  --color-primary: #FD8537;
+  --color-secondary: #4F9AFF;
+  --color-danger: #FF5A5A;
+  --color-info: #1DC5F3;
+  --color-dark-accent: #61555B;
+
+  --color-white: #FFFFFF;
+  --color-black: #000000;
+  --color-headers: #010101;
+  --color-text-primary: #35434D;
+  --color-text-secondary: #858484;
+  --color-text-muted: #2B2B2B;
+
+  --color-light-primary: #C7DBFA;
+  --color-light-secondary: #FFC9A3;
+  --color-light-tertiary: #E9EBF2;
+
+  --color-dark-primary: #281724;
+  --color-dark-secondary: #5E4C59;
+  --color-dark-tertiary: #9A9599;
+  --color-dark-quaternary: #C0BDBD;
+
+  --color-background: #F4F2F0;
+  --color-card: #FFFFFF;
+  --color-tags: #F4F2F0;
+  --color-border: #D9D9D9;
+  --color-border-light: #F7F7F7;
+
+  /* Spacing */
+  --spacing-xs: 10px;
+  --spacing-sm: 12px;
+  --spacing-md: 16px;
+  --spacing-lg: 20px;
+  --spacing-xl: 24px;
+  --spacing-2xl: 32px;
+  --spacing-3xl: 48px;
+  --spacing-4xl: 72px;
+  --spacing-5xl: 96px;
+  --spacing-6xl: 107.5px;
+  --spacing-7xl: 120px;
+  --spacing-8xl: 148px;
+  --spacing-9xl: 160px;
+
+  /* Border Radius */
+  --border-radius-sm: 12px;
+  --border-radius-md: 16px;
+  --border-radius-lg: 20px;
+
+  /* Shadows */
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+  /* Transitions */
+  --transition-fast: 0.25s;
+  --transition-normal: 0.3s;
+  --transition-slow: 0.5s;
+
+  /* Layout */
+  --container-padding: 32px;
+  --header-padding: 20px 24px;
+  --form-gap: 20px;
+  --grid-gap: 16px;
+  --card-gap: 12px;
+
+  /* Component Sizes */
+  --logo-width: 220px;
+  --logo-height: 64px;
+  --company-logo-size: 104px;
+  --icon-size: 80px;
+  --social-icon-size: 70px;
+  --input-height: 59px;
+  --textarea-min-height: 214px;
+
+  /* Z-index */
+  --z-dropdown: 1000;
+  --z-sticky: 1020;
+  --z-fixed: 1030;
+  --z-modal-backdrop: 1040;
+  --z-modal: 1050;
+  --z-popover: 1060;
+  --z-tooltip: 1070;
+}

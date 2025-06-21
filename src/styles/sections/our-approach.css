@@ -1,0 +1,108 @@
+#our-approach {
+  margin: 96px 148px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .title {
+    text-align: center;
+    padding-bottom: 48px;
+
+    p {
+      font-size: 32px;
+    }
+  }
+
+  .box-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+  }
+
+  .box-cards>div {
+    padding: 48px;
+    background: #FFFFFF;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+  }
+
+  .card {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: end;
+    min-height: 367px;
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+
+  .icon {
+    width: 80px;
+    height: 80px;
+    background: var(--color-light-2);
+    border-radius: 12px;
+    position: absolute;
+    top: 48px;
+    right: 48px;
+  }
+
+  .box-cards .card:nth-of-type(1) .icon {
+    background: var(--color-light);
+    background-image: url('/icons/handshake.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 32px;
+  }
+
+  .box-cards .card:nth-of-type(2) .icon {
+    background: var(--color-light-3);
+    background-image: url('/icons/case.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 32px;
+  }
+
+  .box-cards .card:nth-of-type(3) .icon {
+    background: var(--color-light-2);
+    background-image: url('/icons/greetings.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 32px;
+  }
+
+  .box-cards .card:nth-of-type(4) .icon {
+    background: var(--color-light-3);
+    background-image: url('/icons/cart.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 32px;
+  }
+
+  .box-cards .card:nth-of-type(5) .icon {
+    background: var(--color-light-2);
+    background-image: url('/icons/question.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 32px;
+  }
+
+  .box-cards .card:nth-of-type(6) .icon {
+    background: var(--color-light);
+    background-image: url('/icons/chats.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 32px;
+  }
+}
+
+@media (max-width: 1800px) {
+
+  #our-approach {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+}

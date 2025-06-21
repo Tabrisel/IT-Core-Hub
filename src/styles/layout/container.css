@@ -1,0 +1,9 @@
+.container {
+  margin: 0 var(--container-padding);
+  border-radius: var(--border-radius-md);
+}
+
+main {
+  position: relative;
+  height: auto;
+}

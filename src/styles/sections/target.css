@@ -1,0 +1,112 @@
+#target {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  justify-content: space-between;
+}
+
+div.hero {
+  padding-bottom: 72px;
+
+  h1 {
+    margin-bottom: 20px;
+  }
+
+  h1>span {
+    color: var(--color-accent-1);
+    font-size: inherit;
+  }
+
+  h3 {
+    color: #2B2B2B;
+  }
+}
+
+div .target-form {
+  width: 32.8%;
+  padding: 48px;
+  border-radius: 16px;
+  background: var(--color-card);
+
+  p {
+    font-weight: 500;
+    color: var(--color-accent-text);
+  }
+
+  form {
+    width: 100%;
+
+    input {
+      width: fit-content;
+    }
+  }
+}
+
+div .target-container {
+  background: var(--color-card);
+  border-radius: 16px;
+  padding: 48px;
+  display: flex;
+  width: 66.4%;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 107.5px;
+}
+
+div .target-tags {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  flex-wrap: wrap;
+  max-width: 662px;
+
+  .tags {
+    background: var(--color-tags);
+    padding: 24px;
+    border-radius: 16px;
+  }
+}
+
+.specialists-from {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+div .companies {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.company-logo {
+  width: 104px;
+  height: 104px;
+  background-color: #F7F7F7;
+  border-radius: 16px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 40px 40px;
+}
+
+.companies div:nth-child(1) {
+  background-image: url('icons/wb.svg');
+}
+
+.companies div:nth-child(2) {
+  background-image: url('icons/t2.svg');
+}
+
+.companies div:nth-child(3) {
+  background-image: url('icons/lemana.svg');
+}
+
+.companies div:nth-child(4) {
+  background-image: url('icons/magnit.svg');
+}
+
+.companies div:nth-child(5) {
+  background-image: url('icons/mtc.svg');
+}

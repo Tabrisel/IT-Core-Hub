@@ -1,0 +1,141 @@
+#suitable-for {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 96px 148px 24px;
+
+  .title {
+    text-align: center;
+    padding-bottom: 48px;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(15, 1fr);
+    gap: 16px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .item {
+    background: white;
+    font-size: 32px;
+    position: relative;
+    border-radius: 16px;
+    padding: 48px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+
+    small {
+      font-size: 16px;
+      padding-top: 12px;
+      padding-bottom: 0;
+    }
+  }
+
+
+  .a {
+    grid-column: 1;
+    grid-row-start: 1;
+    grid-row-end: 5;
+  }
+
+  .b {
+    grid-column: 2 / 4;
+    grid-row-start: 1;
+    grid-row-end: 4;
+  }
+
+  .c {
+    grid-column: 1;
+    grid-row-start: 5;
+    grid-row-end: 9;
+  }
+
+  .d {
+    grid-column: 2;
+    grid-row-start: 4;
+    grid-row-end: 9;
+  }
+
+  .e {
+    grid-column: 3;
+    grid-row-start: 4;
+    grid-row-end: 9;
+  }
+
+  .f {
+    grid-column: 1 / 4;
+    grid-row-start: 9;
+    grid-row-end: 11;
+  }
+
+  .g {
+    grid-column: 1;
+    grid-row-start: 11;
+    grid-row-end: 16;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+  }
+
+  .h {
+    grid-column: 2;
+    grid-row-start: 11;
+    grid-row-end: 16;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+  }
+
+  .i {
+    grid-column: 3;
+    grid-row-start: 11;
+    grid-row-end: 16;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+  }
+
+  .box {
+    width: 80px;
+    height: 80px;
+    background: var(--color-accent-1);
+    position: absolute;
+    right: 48px;
+    top: 48px;
+    border-radius: 12px;
+  }
+
+  .item:nth-of-type(7) .box {
+    background: var(--color-light-2);
+    background-image: url('/icons/graduationCap.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 32px;
+  }
+
+  .item:nth-of-type(8) .box {
+    background: var(--color-light-3);
+    background-image: url('/icons/calendar.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 32px;
+  }
+
+  .item:nth-of-type(9) .box {
+    background: var(--color-light);
+    background-image: url('/icons/money.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 32px;
+  }
+
+}
+
+@media (max-width: 1800px) {
+  #suitable-for {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+}
