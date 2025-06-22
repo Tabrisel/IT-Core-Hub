@@ -34,7 +34,7 @@ footer .navigations nav h5 {
 
 footer .roots {
   position: absolute;
-  left: 0;
+  left: 32px;
   bottom: 0;
   font-size: var(--font-size-lg);
   color: var(--color-dark-quaternary);
@@ -45,7 +45,7 @@ footer .nav__list {
   flex-direction: column;
   align-items: flex-start;
   gap: var(--spacing-lg);
-  font-size: var(--font-size-lg);
+  font-size: var(--font-size-base);
   color: var(--color-dark-primary);
   padding-right: 0;
 }
@@ -61,5 +61,20 @@ footer .nav__list li:hover a {
 @media (min-width: 1800px) {
   footer .navigations {
     gap: 120px;
+  }
+}
+
+@media (max-width: 1310px) {
+  footer {
+    flex-direction: column;
+  }
+
+  footer .footer-hero {
+    max-width: 100%;
+  }
+
+  footer .navigations {
+    justify-content: space-between;
+    padding-top: var(--spacing-3xl);
   }
 }

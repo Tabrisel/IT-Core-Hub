@@ -42,7 +42,6 @@
   }
 
   .questions {
-    max-width: 875px;
     width: 100%;
     margin-top: var(--spacing-3xl);
   }
@@ -83,6 +82,33 @@
 @media (max-width: 1800px) {
   #form-faq {
     padding: 0 50px;
+  }
+}
+
+@media (max-width: 1440px) {
+  #form-faq {
+    flex-direction: column-reverse;
+    gap: var(--spacing-4xl);
+    padding: 0 var(--spacing-lg);
+  }
+
+  #second-form {
+    order: 2;
+    width: 100%;
+  }
+
+  #faq {
+    order: 1;
+    width: 100%;
+
+    .text-card {
+      font-size: var(--spacing-2xl);
+    }
+  }
+
+  .questions {
+    margin-top: 0;
+    max-width: 100%;
   }
 }
 

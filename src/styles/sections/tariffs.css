@@ -41,6 +41,16 @@
     }
   }
 
+  @media (max-width: 1440px) {
+    .about {
+      max-width: 270px;
+    }
+
+    .box {
+      padding-top: 0;
+    }
+  }
+
   .about {
     display: flex;
     flex-direction: column;

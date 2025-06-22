@@ -23,6 +23,12 @@ body {
   background-color: var(--color-background);
 }
 
+@media (max-width: 1024px) {
+  body {
+    gap: var(--spacing-2xl);
+  }
+}
+
 h1,
 h2,
 h3,
@@ -107,4 +113,13 @@ textarea::placeholder {
 
 li:hover a {
   color: var(--color-primary);
+}
+
+/* Медиа-запрос для параграфов и тегов на экранах до 1440px */
+@media (max-width: 1440px) {
+
+  p,
+  .tags {
+    font-size: var(--font-size-base);
+  }
 }

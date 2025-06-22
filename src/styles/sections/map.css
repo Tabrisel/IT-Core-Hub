@@ -13,3 +13,9 @@
   display: block;
   margin: 0 auto;
 }
+
+@media (max-width: 1440px) {
+  #map img {
+    padding-top: 0;
+  }
+}

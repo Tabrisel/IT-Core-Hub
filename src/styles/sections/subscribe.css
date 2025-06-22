@@ -87,3 +87,20 @@
     transform: scale(1.1);
   }
 }
+
+@media (max-width: 1440px) {
+
+  #subscribe .socials {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-md);
+
+    p {
+      font-size: var(--spacing-lg);
+    }
+  }
+
+  #subscribe .socials p {
+    font-size: var(--font-size-base);
+  }
+}

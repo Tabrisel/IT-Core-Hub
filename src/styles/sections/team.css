@@ -88,3 +88,28 @@
     margin-bottom: 120px;
   }
 }
+
+@media (max-width: 1440px) {
+  #team {
+    overflow: hidden;
+  }
+
+  #team .team {
+    display: flex;
+    flex-direction: row;
+    gap: var(--spacing-lg);
+    width: max-content;
+  }
+
+  #team .member {
+    width: 351px;
+    margin: 0 !important;
+    flex-shrink: 0;
+  }
+
+  #team .member:nth-child(odd),
+  #team .member:nth-child(even) {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
+}

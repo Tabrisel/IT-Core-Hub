@@ -62,6 +62,24 @@
   }
 }
 
+@media (max-width: 1440px) {
+  .section {
+    padding: 0 var(--spacing-lg);
+  }
+
+  .section-title {
+    margin-bottom: 0;
+  }
+
+  .section-title p {
+    font-size: var(--font-size-xl);
+  }
+
+  .section-title h2 {
+    margin-bottom: var(--spacing-3xl);
+  }
+}
+
 @media (max-width: 768px) {
 
   .cards-grid-3,

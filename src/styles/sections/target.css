@@ -106,3 +106,29 @@ div .companies {
 .companies div:nth-child(5) {
   background-image: url('icons/mtc.svg');
 }
+
+@media (max-width: 1900px) {
+
+  div .target-container {
+    width: 60%;
+  }
+
+  div .target-form {
+    width: 40%;
+  }
+
+  #target {
+    gap: var(--spacing-lg);
+  }
+}
+
+@media (max-width: 1250px) {
+  #target {
+    flex-direction: column;
+  }
+
+  div .target-container,
+  div .target-form {
+    width: 100%;
+  }
+}
