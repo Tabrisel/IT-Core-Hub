@@ -8,12 +8,11 @@
 @import './styles/components/forms.css';
 @import './styles/sections/target.css';
 @import './styles/sections/suitable-for.css';
-@import './styles/sections/second-form.css';
 @import './styles/sections/our-approach.css';
 @import './styles/sections/process-study.css';
 @import './styles/sections/map.css';
 @import './styles/sections/team.css';
 @import './styles/sections/skills.css';
 @import './styles/sections/tariffs.css';
-@import './styles/sections/faq.css';
+@import './styles/sections/form-faq.css';
 @import './styles/sections/subscribe.css';
