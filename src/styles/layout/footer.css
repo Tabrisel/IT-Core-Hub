@@ -77,4 +77,8 @@ footer .nav__list li:hover a {
     justify-content: space-between;
     padding-top: var(--spacing-3xl);
   }
+
+  footer .navigations {
+    flex-wrap: wrap;
+  }
 }

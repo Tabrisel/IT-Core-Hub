@@ -45,6 +45,12 @@
   }
 }
 
+@media (max-width: 768px) {
+  #process-study .card p {
+    max-width: 415px;
+  }
+}
+
 @media (max-width: 1440px) {
   #process-study {
     margin-bottom: var(--spacing-md);

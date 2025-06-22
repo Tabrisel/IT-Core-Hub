@@ -89,5 +89,7 @@
 
   .section {
     margin: var(--spacing-4xl) auto;
+    padding-left: 0;
+    padding-right: 0;
   }
 }

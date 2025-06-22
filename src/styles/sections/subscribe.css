@@ -104,3 +104,9 @@
     font-size: var(--font-size-base);
   }
 }
+
+@media (max-width: 768px) {
+  #subscribe .socials {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

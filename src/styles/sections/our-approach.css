@@ -66,3 +66,9 @@
     padding-bottom: var(--spacing-xl);
   }
 }
+
+@media (max-width: 768px) {
+  #our-approach .card {
+    min-height: 315px;
+  }
+}

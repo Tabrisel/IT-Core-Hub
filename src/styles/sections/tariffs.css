@@ -85,3 +85,30 @@
     }
   }
 }
+
+ @media (max-width: 900px) {
+
+
+  #tariffs {
+    .proposal {
+      flex-direction: column;
+      gap: var(--spacing-xl);
+
+      .boxes {
+        justify-content: flex-start;
+        gap: var(--spacing-5xl);
+      }
+    }
+
+    .about, 
+    .prices {
+      width: 100%;
+      max-width: 100%;
+
+      
+        h4 {
+          max-width: 100%;
+        }
+    }
+  }
+}
