@@ -21,3 +21,9 @@ main {
       max-width: 100%;
     }
   }
+
+  @media (max-width: 650px) {
+    .container {
+      padding: var(--container-padding-mb);
+    }
+  }

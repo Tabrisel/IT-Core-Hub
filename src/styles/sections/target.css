@@ -132,3 +132,56 @@ div .companies {
     width: 100%;
   }
 }
+
+@media (max-width: 650px) {
+  #target {
+
+    div.hero {
+      padding-bottom: 36px;
+    }
+
+    .target-container {
+      padding: var(--spacing-sm);
+    }
+
+    .target-tags {
+      width: 100%;
+      max-width: 100%;
+    }
+
+    .target-form {
+      padding: 12px;
+      border-radius: var(--border-radius-xxs);
+    }
+
+    .target-form h3 {
+      font-size: 16px;
+      margin-bottom: 4px;
+    }
+
+    .target-form p {
+      font-size: 12px;
+      margin-bottom: 0;
+      font-weight: 500;
+      color: var(--color-text-primary);
+    }
+  }
+
+  div .companies {
+    gap: 6px;
+    justify-content: flex-start;
+  }
+
+  .company-logo {
+    width: 48px;
+    height: 48px;
+    background-size: 20px 20px;
+    border-radius: 8px;
+    border: 1px solid #E5E5E5;
+  }
+
+  .specialists-from>div:first-child {
+    font-size: 10px;
+    color: var(--color-text-primary);
+  }
+}

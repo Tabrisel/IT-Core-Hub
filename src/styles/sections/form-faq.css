@@ -124,3 +124,46 @@
     width: 100%;
   }
 }
+
+@media (max-width: 650px) {
+  #form-faq {
+    padding: 0 8px;
+    gap: 32px;
+  }
+
+  #second-form {
+    border-radius: 8px;
+  }
+
+  #second-form .target-form {
+    padding: 12px;
+    border-radius: var(--border-radius-xxs);
+  }
+
+  #second-form .target-form h3 {
+    font-size: 16px;
+    margin-bottom: 4px;
+  }
+
+  #second-form .target-form p {
+    font-size: 12px;
+    margin-bottom: 0;
+    font-weight: 500;
+    color: var(--color-text-primary);
+  }
+
+  #faq {
+    .text-card {
+      font-size: var(--spacing-md);
+    }
+
+    .arrow {
+      width: var(--arrow-size-mb);
+      height: var(--arrow-size-mb);
+    }
+
+    .questions {
+      margin-top: 0;
+    }
+  }
+}

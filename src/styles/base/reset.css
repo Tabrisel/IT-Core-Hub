@@ -59,6 +59,28 @@ h5 {
   font-size: var(--font-size-base);
 }
 
+@media (max-width: 650px) {
+  h1 {
+    font-size: var(--font-size-2-5xl);
+  }
+
+  h2 {
+    font-size: var(--font-size-2lg);
+  }
+
+  h3 {
+    font-size: var(--font-size-base);
+  }
+
+  h4 {
+    font-size: var(--font-size-sm);
+  }
+
+  h5 {
+    font-size: var(--font-size-sm);
+  }
+}
+
 p {
   color: var(--color-dark-secondary);
   font-size: var(--font-size-sm);
@@ -121,5 +143,33 @@ li:hover a {
   p,
   .tags {
     font-size: var(--font-size-base);
+  }
+}
+
+@media (max-width: 650px) {
+  p {
+    font-size: var(--font-size-xxs);
+  }
+
+  button {
+    border-radius: 6px;
+  }
+}
+
+@media (max-width: 650px) {
+
+  #target {
+    .target-container {
+      gap: 46.5px;
+    }
+
+    .target-tags {
+      gap: 4px;
+    }
+
+    .tags {
+      font-size: 12px;
+      width: 100%;
+    }
   }
 }

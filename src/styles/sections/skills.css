@@ -53,3 +53,22 @@
       overflow: hidden;
     }
   }
+
+  @media (max-width: 650px) {
+    #skills {
+
+      .box-skills {
+        padding-top: var(--spacing-xl);
+      }
+
+      .box-skills,
+      .first-row {
+        gap: var( --spacing-xs);
+      }
+
+      .card {
+        padding: var(--spacing-xl);
+        font-size: var(--font-size-sm);
+      }
+    }
+  }

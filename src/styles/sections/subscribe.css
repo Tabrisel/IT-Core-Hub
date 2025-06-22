@@ -110,3 +110,32 @@
     grid-template-columns: repeat(1, 1fr);
   }
 }
+
+@media (max-width: 650px) {
+
+
+  #subscribe {
+    .social-card {
+      padding: var(--spacing-xl);
+      min-height: 200px;
+
+      p {
+        font-size: var(--spacing-xs);
+      }
+
+      .social-icon {
+        width: 36px;
+        height: 36px;
+        right: var(--spacing-xl);
+        top: var(--spacing-xl);
+        background-size: 18px;
+      }
+    }
+
+    .socials {
+      grid-template-columns: repeat(2, 1fr);
+      gap: var(--spacing-xs);
+      padding-top: var(--spacing-xl);
+    }
+  }
+}

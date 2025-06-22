@@ -185,3 +185,45 @@
     grid-row: 7;
   }
 }
+
+@media (max-width: 650px) {
+  #suitable-for {
+    .item {
+      font-size: var(--font-size-sm);
+      padding: var(--spacing-xl);
+      border-radius: var(--spacing-xxs);
+      min-height: 160px;
+
+      small {
+        font-size: var(--font-size-xxs);
+      }
+    }
+
+    .item.f {
+      min-height: fit-content;
+    }
+
+    .box {
+      width: var(--icon-size-mb);
+      height: var(--icon-size-mb);
+      top: 24px;
+      right: 24px;
+    }
+
+    .item:nth-of-type(7) .box {
+      background-size: 20px;
+    }
+
+    .item:nth-of-type(8) .box {
+      background-size: 20px;
+    }
+
+    .item:nth-of-type(9) .box {
+      background-size: 20px;
+    }
+
+    .grid {
+      gap: var(--spacing-xxs);
+    }
+  }
+}

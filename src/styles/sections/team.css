@@ -113,3 +113,48 @@
     margin-bottom: 0 !important;
   }
 }
+
+@media (max-width: 650px) {
+  #team .team {
+    gap: var(--spacing-sm);
+    padding-top: var(--spacing-xl);
+  }
+  #team .member {
+    width: 175.5px;
+    height: 280px;
+
+    padding: var(--spacing-xxs);
+
+    .box {
+      gap: 2px;
+    }
+
+    .box-name {
+      padding: 8px;
+      border-radius: var(--border-radius-xxs);
+
+      p {
+        margin-bottom: 2px;
+      }
+    }
+
+    .box-wb {
+      padding: 8px;
+      border-radius: var(--border-radius-xxs);
+    }
+
+    .wb-icon {
+      width: 20px;
+      height: 20px;
+      border-radius: 5px;
+    }
+
+    .box-name {
+      font-size: 10px;
+
+      p {
+        font-size: 7px;
+      }
+    }
+  }
+}

@@ -71,3 +71,15 @@
     grid-column: 1;
   }
 }
+
+@media (max-width: 650px) {
+  #process-study {
+    .card {
+      min-height: 220px;
+
+      p {
+        max-width: 180px;
+      }
+    }
+  }
+}

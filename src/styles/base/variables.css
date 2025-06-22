@@ -7,12 +7,15 @@
   --font-weight-semibold: 600;
   --font-weight-bold: 700;
 
+  --font-size-xxs: 0.5em;
   --font-size-xs: 0.875em;
   --font-size-sm: 1em;
   --font-size-base: 1.25em;
   --font-size-lg: 1.5em;
+  --font-size-2lg: 1.7em;
   --font-size-xl: 2em;
   --font-size-2xl: 2.25em;
+  --font-size-2-5xl: 2.5em;
   --font-size-3xl: 3.375em;
   --font-size-4xl: 5.875em;
 
@@ -49,6 +52,7 @@
   --color-border-light: #F7F7F7;
 
   /* Spacing */
+  --spacing-xxs: 8px;
   --spacing-xs: 10px;
   --spacing-sm: 12px;
   --spacing-md: 16px;
@@ -64,6 +68,7 @@
   --spacing-9xl: 160px;
 
   /* Border Radius */
+  --border-radius-xxs: 8px;
   --border-radius-sm: 12px;
   --border-radius-md: 16px;
   --border-radius-lg: 20px;
@@ -79,6 +84,7 @@
 
   /* Layout */
   --container-padding: 32px;
+  --container-padding-mb: 8px;
   --container-max-width: 1856px;
   --content-max-width: 1856px;
   --header-padding: 20px 24px;
@@ -90,8 +96,12 @@
   /* Component Sizes */
   --logo-width: 220px;
   --logo-height: 64px;
+  --logo-width-mb: 110px;
+  --logo-height-mb: 32px;
   --company-logo-size: 104px;
   --icon-size: 80px;
+  --icon-size-mb: 40px;
+  --arrow-size-mb: 20px;
   --social-icon-size: 70px;
   --input-height: 59px;
   --textarea-min-height: 214px;

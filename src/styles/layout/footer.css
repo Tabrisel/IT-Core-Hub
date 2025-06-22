@@ -80,5 +80,47 @@ footer .nav__list li:hover a {
 
   footer .navigations {
     flex-wrap: wrap;
+    padding-bottom: 136px;
+  }
+}
+
+@media (max-width: 650px) {
+  footer .roots {
+    left: 8px;
+    font-size: 10px;
+  }
+
+  footer .navigations {
+    padding-top: var(--spacing-xl);
+    padding-bottom: 68px;
+
+    h5 {
+      font-size: 10px;
+    }
+  }
+
+  footer .navigations nav h5 {
+    padding-bottom: var(--spacing-sm);
+  }
+
+  footer .footer-hero {
+    gap: var(--spacing-sm);
+    align-items: flex-start;
+  }
+
+  footer .logo {
+    width: 124px;
+    height: 36px;
+    background-size: contain;
+    margin: 0;
+    align-self: flex-start;
+  }
+
+  footer .nav__list {
+    gap: var(--font-size-xxs);
+  }
+
+  footer .nav__list a {
+    font-size: var(--font-size-xxs);
   }
 }

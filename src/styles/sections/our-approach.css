@@ -72,3 +72,23 @@
     min-height: 315px;
   }
 }
+
+@media (max-width: 650px) {
+  #our-approach {
+    p {
+      font-size: var(--font-size-xxs);
+    }
+
+    .section-title p {
+      font-size: var(--font-size-sm);
+    }
+  }
+
+  #our-approach .card {
+    min-height: 160px;
+  }
+
+  #our-approach .card-icon {
+    background-size: 20px;
+  }
+}

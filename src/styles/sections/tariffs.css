@@ -112,3 +112,32 @@
     }
   }
 }
+
+@media (max-width: 650px) {
+  #tariffs {
+    .box {
+      gap: var(--spacing-xs);
+    }
+    .about {
+      h4 {
+        max-width: 150px;
+      }
+
+      p {
+        font-size: 10px;
+        margin-top: 6px;
+        margin-bottom: 0;
+      }
+    }
+
+    .prices .boxes p {
+      font-size: 10px;
+      margin-top: 4px;
+    }
+
+    .proposal {
+      padding: var(--spacing-xl);
+      gap: var(--spacing-lg);
+    }
+  }
+}

@@ -93,3 +93,25 @@
     padding-right: 0;
   }
 }
+
+@media (max-width: 650px) {
+  .section-title p {
+        font-size: var(--font-size-sm);
+  }
+
+  .card {
+    padding: var(--spacing-xl);
+  }
+
+  .section-title h2 {
+    margin-bottom: var(--spacing-xl);
+  }
+
+  .card-icon {
+    width: var(--icon-size-mb);
+    height: var(--icon-size-mb);
+    right: var(--spacing-xl);
+    top: var(--spacing-xl);
+    padding: var(--spacing-sm);
+  }
+}
