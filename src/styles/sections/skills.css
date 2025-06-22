@@ -2,47 +2,48 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 96px 0;
-  margin: 96px auto 24px;
-  background-image: linear-gradient(to right, #FFC9A3, #E9EBF2);
-  border-radius: 16px;
+  padding: var(--section-spacing) 0;
+  margin: var(--section-spacing) auto;
+  max-width: var(--container-max-width);
+  background-image: linear-gradient(to right, var(--color-light-secondary), var(--color-light-tertiary));
+  border-radius: var(--border-radius-md);
 }
 
 .box-skills {
-  padding-top: 48px;
+  padding-top: var(--spacing-3xl);
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: var(--spacing-lg);
 
   .first-row,
   .second-row {
     display: flex;
-    gap: 10px;
+    gap: var(--spacing-xs);
     flex-wrap: nowrap;
     justify-content: center;
   }
 
   .card {
-    padding: 24px;
+    padding: var(--spacing-xl);
     width: 100%;
     text-align: center;
     background: var(--color-card);
-    border-radius: 16px;
+    border-radius: var(--border-radius-md);
     box-sizing: border-box;
-    font-size: 32px;
-    color: #000000;
-    text-wrap: nowrap;
+    font-size: var(--font-size-xl);
+    color: var(--color-black);
+    white-space: nowrap;
   }
 
   @media (min-width: 1900px) {
 
     .first-row,
     .second-row {
-      gap: 20px;
+      gap: var(--spacing-lg);
     }
 
     .card {
-      padding: 48px;
+      padding: var(--spacing-3xl);
     }
   }
 }

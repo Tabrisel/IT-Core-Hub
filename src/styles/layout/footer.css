@@ -3,6 +3,7 @@ footer {
   flex-direction: row;
   justify-content: space-between;
   position: relative;
+  width: 100%;
 }
 
 footer .footer-hero {

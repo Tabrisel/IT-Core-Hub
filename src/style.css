@@ -2,6 +2,7 @@
 @import './styles/base/reset.css';
 @import './styles/components/logo.css';
 @import './styles/layout/container.css';
+@import './styles/layout/sections.css';
 @import './styles/layout/header.css';
 @import './styles/layout/footer.css';
 @import './styles/components/forms.css';

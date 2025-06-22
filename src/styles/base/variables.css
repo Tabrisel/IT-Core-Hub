@@ -79,10 +79,13 @@
 
   /* Layout */
   --container-padding: 32px;
+  --container-max-width: 1856px;
+  --content-max-width: 1560px;
   --header-padding: 20px 24px;
   --form-gap: 20px;
   --grid-gap: 16px;
   --card-gap: 12px;
+  --section-spacing: 96px;
 
   /* Component Sizes */
   --logo-width: 220px;

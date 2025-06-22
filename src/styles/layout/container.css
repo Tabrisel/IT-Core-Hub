@@ -1,6 +1,14 @@
 .container {
-  margin: 0 var(--container-padding);
+  margin: 0 auto;
+  padding: 0 var(--container-padding);
+  max-width: var(--container-max-width);
   border-radius: var(--border-radius-md);
+}
+
+.content-wrapper {
+  margin: 0 auto;
+  max-width: var(--content-max-width);
+  width: 100%;
 }
 
 main {

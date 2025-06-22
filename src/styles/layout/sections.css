@@ -1,0 +1,75 @@
+/* Общие стили для секций */
+.section {
+  margin: var(--section-spacing) auto;
+  max-width: var(--content-max-width);
+  width: 100%;
+  padding: 0 var(--container-padding);
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: var(--spacing-3xl);
+}
+
+.section-title h2 {
+  margin-bottom: var(--spacing-lg);
+}
+
+.section-title p {
+  font-size: var(--font-size-xl);
+  color: var(--color-text-secondary);
+}
+
+/* Сетки и карточки */
+.cards-grid {
+  display: grid;
+  gap: var(--card-gap);
+  width: 100%;
+}
+
+.cards-grid-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.cards-grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.card {
+  background: var(--color-card);
+  border-radius: var(--border-radius-md);
+  padding: var(--spacing-3xl);
+  box-shadow: var(--shadow-sm);
+  position: relative;
+}
+
+.card-icon {
+  position: absolute;
+  top: var(--spacing-3xl);
+  right: var(--spacing-3xl);
+  width: var(--icon-size);
+  height: var(--icon-size);
+  border-radius: var(--border-radius-sm);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 32px;
+}
+
+/* Медиа-запросы */
+@media (max-width: 1800px) {
+  .section {
+    padding: 0 50px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .cards-grid-3,
+  .cards-grid-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .section {
+    margin: var(--spacing-4xl) auto;
+  }
+}
