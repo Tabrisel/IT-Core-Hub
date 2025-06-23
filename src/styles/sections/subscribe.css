@@ -139,3 +139,26 @@
     }
   }
 }
+
+@media (max-width: 1024px) and (min-width: 768px) {
+  #subscribe h2 {
+    font-size: 22px;
+  }
+
+  .subscribe-content .social-card {
+    padding: 16px;
+  }
+
+  .subscribe-content .social-card h3 {
+    font-size: 16px;
+  }
+
+  .subscribe-content .social-card p {
+    font-size: 12px;
+  }
+
+  .subscribe-content .social-card img {
+    width: 20px;
+    height: 20px;
+  }
+}

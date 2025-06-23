@@ -124,3 +124,14 @@ footer .nav__list li:hover a {
     font-size: var(--font-size-xxs);
   }
 }
+
+@media (max-width: 1024px) and (min-width: 768px) {
+  .footer-content p {
+    font-size: 12px;
+  }
+
+  .footer-content .logo {
+    width: 120px;
+    height: 36px;
+  }
+}

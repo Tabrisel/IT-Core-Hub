@@ -112,6 +112,76 @@
   }
 }
 
+@media (max-width: 1440px) and (min-width: 1200px) {
+
+  .form-section h2,
+  .faq-section h2 {
+    font-size: 28px;
+  }
+
+  .form-container input,
+  .form-container textarea {
+    font-size: 14px;
+  }
+
+  .form-container .btn {
+    font-size: 14px;
+  }
+
+  .faq-question {
+    font-size: 16px;
+  }
+
+  .faq-answer {
+    font-size: 14px;
+  }
+
+  .faq-toggle {
+    width: 28px;
+    height: 28px;
+  }
+
+  .faq-toggle img {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media (max-width: 1920px) and (min-width: 1440px) {
+
+  .form-section h2,
+  .faq-section h2 {
+    font-size: 28px;
+  }
+
+  .form-container input,
+  .form-container textarea {
+    font-size: 14px;
+  }
+
+  .form-container .btn {
+    font-size: 14px;
+  }
+
+  .faq-question {
+    font-size: 16px;
+  }
+
+  .faq-answer {
+    font-size: 14px;
+  }
+
+  .faq-toggle {
+    width: 28px;
+    height: 28px;
+  }
+
+  .faq-toggle img {
+    width: 20px;
+    height: 20px;
+  }
+}
+
 @media (max-width: 768px) {
   #form-faq {
     flex-direction: column;
@@ -165,5 +235,53 @@
     .questions {
       margin-top: 0;
     }
+  }
+}
+
+@media (max-width: 1024px) and (min-width: 650px) {
+
+  .form-section h2,
+  .faq-section h2 {
+    font-size: 22px;
+  }
+
+  .form-container input,
+  .form-container textarea {
+    font-size: 12px;
+  }
+
+  .form-container .btn {
+    font-size: 12px;
+  }
+
+  .faq-question {
+    font-size: 16px !important;
+  }
+
+  .faq-answer {
+    font-size: 14px !important;
+  }
+
+  #faq .text-card {
+    font-size: 16px !important;
+  }
+
+  .faq-toggle {
+    width: 16px;
+    height: 16px;
+  }
+
+  .faq-toggle img {
+    width: 12px;
+    height: 12px;
+  }
+
+  .arrow {
+    width: 16px !important;
+    height: 16px !important;
+  }
+
+  .faq-list .faq-item {
+    padding: 12px;
   }
 }

@@ -1,11 +1,28 @@
 header {
   padding: var(--header-padding);
   position: relative;
+  width: 100%;
+}
+
+.header-box {
+  width: 100%;
+  background: var(--color-card);
+  padding: 20px 24px;
+  border-radius: 16px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 100%;
 }
+
+/* На десктопе логотип внутри header-box */
+header>.logo {
+  display: none;
+}
+
+.header-box .logo {
+  display: block;
+}
+
 
 nav {
   color: var(--color-dark-primary);
@@ -140,18 +157,24 @@ nav .nav__list li:hover a {
 }
 
 @media (max-width:650px) {
-  header {
-    flex-direction: column;
-    padding: 12px 16px;
-    gap: 12px;
-  }
 
-  .logo {
+  /* На мобильном логотип снаружи header-box */
+  header>.logo {
+    display: block;
     width: 140px;
     height: 40px;
     background-size: contain;
-    margin: 0 auto;
-    align-self: center;
+    margin: 0 auto 12px auto;
+  }
+
+  .header-box .logo {
+    display: none;
+  }
+
+  .header-box {
+    flex-direction: row;
+    padding: 12px 16px;
+    gap: 12px;
   }
 
   nav {

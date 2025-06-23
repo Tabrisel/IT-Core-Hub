@@ -51,6 +51,58 @@
     }
   }
 
+  @media (max-width: 1440px) and (min-width: 1200px) {
+    #tariffs h2 {
+      font-size: 28px;
+    }
+
+    .tariffs-content .proposal {
+      padding: 20px;
+    }
+
+    .tariffs-content .proposal h3 {
+      font-size: 18px;
+    }
+
+    .tariffs-content .proposal p {
+      font-size: 14px;
+    }
+
+    .tariffs-content .proposal .price {
+      font-size: 24px;
+    }
+
+    .tariffs-content .proposal .btn {
+      font-size: 14px;
+    }
+  }
+
+  @media (max-width: 1920px) and (min-width: 1440px) {
+    #tariffs h2 {
+      font-size: 28px;
+    }
+
+    .tariffs-content .proposal {
+      padding: 20px;
+    }
+
+    .tariffs-content .proposal h3 {
+      font-size: 18px;
+    }
+
+    .tariffs-content .proposal p {
+      font-size: 14px;
+    }
+
+    .tariffs-content .proposal .price {
+      font-size: 24px;
+    }
+
+    .tariffs-content .proposal .btn {
+      font-size: 14px;
+    }
+  }
+
   .about {
     display: flex;
     flex-direction: column;
@@ -86,7 +138,7 @@
   }
 }
 
- @media (max-width: 900px) {
+@media (max-width: 900px) {
 
 
   #tariffs {
@@ -100,15 +152,15 @@
       }
     }
 
-    .about, 
+    .about,
     .prices {
       width: 100%;
       max-width: 100%;
 
-      
-        h4 {
-          max-width: 100%;
-        }
+
+      h4 {
+        max-width: 100%;
+      }
     }
   }
 }
@@ -118,6 +170,7 @@
     .box {
       gap: var(--spacing-xs);
     }
+
     .about {
       h4 {
         max-width: 150px;
@@ -139,5 +192,31 @@
       padding: var(--spacing-xl);
       gap: var(--spacing-lg);
     }
+  }
+}
+
+@media (max-width: 1024px) and (min-width: 768px) {
+  #tariffs h2 {
+    font-size: 22px;
+  }
+
+  .tariffs-content .proposal {
+    padding: 16px;
+  }
+
+  .tariffs-content .proposal h3 {
+    font-size: 16px;
+  }
+
+  .tariffs-content .proposal p {
+    font-size: 12px;
+  }
+
+  .tariffs-content .proposal .price {
+    font-size: 20px;
+  }
+
+  .tariffs-content .proposal .btn {
+    font-size: 14px;
   }
 }

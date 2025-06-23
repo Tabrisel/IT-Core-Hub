@@ -25,7 +25,7 @@ body {
 
 @media (max-width: 1024px) {
   body {
-    gap: var(--spacing-2xl);
+    gap: var(--spacing-md);
   }
 }
 
@@ -158,6 +158,10 @@ li:hover a {
 
 @media (max-width: 650px) {
 
+  body {
+    gap: 0;
+  }
+
   #target {
     .target-container {
       gap: 46.5px;
@@ -171,5 +175,113 @@ li:hover a {
       font-size: 12px;
       width: 100%;
     }
+  }
+}
+
+@media (max-width: 1440px) and (min-width: 1200px) {
+  h1 {
+    font-size: 36px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  .tags {
+    font-size: 14px;
+  }
+
+  .btn {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 1920px) and (min-width: 1440px) {
+  h1 {
+    font-size: var(--font-size-3xl);
+  }
+
+  h2 {
+    font-size: 32px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  .tags {
+    font-size: 16px;
+  }
+
+  .btn {
+    font-size: 16px;
+    padding: 12px 24px;
+  }
+}
+
+@media (max-width: 1024px) and (min-width: 768px) {
+  h1 {
+    font-size: 32px;
+  }
+
+  h2 {
+    font-size: 26px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  .tags {
+    font-size: 14px;
+  }
+
+  .btn {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 768px) and (min-width: 650px) {
+  h1 {
+    font-size: 32px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  h3 {
+    font-size: 16px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  .tags {
+    font-size: 12px;
+  }
+
+  .btn {
+    font-size: 14px;
+    padding: 8px 16px;
   }
 }
