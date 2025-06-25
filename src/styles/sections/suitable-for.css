@@ -5,12 +5,20 @@
 
   .grid {
     display: grid;
+    position: relative;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(15, 1fr);
     gap: var(--spacing-md);
     width: 100%;
     max-width: var(--content-max-width);
     margin: 0 auto;
+
+    picture {
+      position: absolute;
+      right: 0;
+      top: 400px;
+      z-index: 1;
+    }
   }
 
   .item {
@@ -184,6 +192,36 @@
     grid-column: 1 / 3;
     grid-row: 7;
   }
+
+  #suitable-for .grid {
+    picture {
+      position: absolute;
+      right: 0;
+      top: 98px;
+      width: 330px;
+      height: 290px;
+      z-index: 1;
+
+      img {
+      width: 100%;
+      height: auto;
+      display: block;
+      }
+    }
+
+    .item text{
+      z-index: 2;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  #suitable-for .grid {
+    picture {
+      width: 230px;
+      top: 170px;
+    }
+  }
 }
 
 @media (max-width: 650px) {
@@ -224,6 +262,12 @@
 
     .grid {
       gap: var(--spacing-xxs);
+
+      picture {
+        width: 230px;
+        right: 0;
+        top: 50px;
+      }
     }
   }
 }
@@ -306,5 +350,22 @@
 
   .suitable-for-grid .card .small {
     font-size: 12px;
+  }
+
+  #suitable-for .grid {
+    picture {
+      top: 150px;
+      width: 250px;
+      height: 250px;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  #suitable-for .grid {
+    picture {
+      width: 150px;
+      top: 80px;
+    }
   }
 }

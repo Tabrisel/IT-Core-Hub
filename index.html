@@ -4,7 +4,9 @@
 <head>
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Vite App</title>
 </head>
@@ -37,10 +39,17 @@
   <main class="container">
     <div id="target">
       <div class="target-container">
+        <picture>
+        <!-- Mobile portrait (650px и меньше) -->
+        <source srcset="/images/teacher_mb.png" media="(max-width: 650px)">
+
+        <!-- Desktop (по умолчанию 1920+) -->
+        <img src="/images/teacher.png" alt="Учитель" loading="lazy">
+      </picture>
         <div class="target-tags">
-          <div class="tags">Бесплатное мок-интервью</div>
-          <div class="tags">Персональный ментор</div>
-          <div class="tags">Поддержка на испытательном сроке</div>
+          <div class="tags"><div class="icon"></div>Бесплатное мок-интервью</div>
+          <div class="tags"><div class="icon"></div>Персональный ментор</div>
+          <div class="tags"><div class="icon"></div>Поддержка на испытательном сроке</div>
         </div>
         <div class="hero">
           <h1><span>Оффер</span> под ключ</h1>
@@ -95,6 +104,10 @@
         <h2>Для кого подходит</h2>
       </div>
       <div class="grid">
+        <picture>
+        <img src="/images/newspaper.png" alt="Газета" loading="lazy">
+        </picture>
+      
         <div class="item a">Действующие студенты<br><small>Любое направление</small></div>
         <div class="item b">С опытом работы в других сферах<br><small>не IT</small></div>
         <div class="item c">Действующие БА/CA<br><small>Intern, Junior, middle</small></div>
@@ -159,18 +172,29 @@
       </div>
       <div class="cards">
         <div class="card special">
+        <picture>
+        <img src="/images/manager.png" alt="Менеджер" loading="lazy">
+        </picture>
+        
           <h4>Скрининг</h4>
           <p>После заполнения формы с тобой свяжется наш специалист и проведёт бесплатное мок-интервью для оценки
             начальных знаний.
             При успешном прохождении интервью мы пригласим тебя на следующий этап.</p>
         </div>
         <div class="card">
+        <picture>
+        <img src="/images/team.png" alt="Сотрудники" loading="lazy">
+        </picture>
           <h4>Подготовка</h4>
           <p>До получения оффера ты будешь работать с персональным ментором.
             Ментор составит индивидуальный план обучения, предоставит обучающие материалы и подготовит к собеседованиям,
             а карьерный консультант поможет составить правильное резюме.</p>
         </div>
         <div class="card">
+           <picture>
+        <!-- Mobile portrait (650px и меньше) -->
+        <img src="/images/stack-books.png" alt="Стопка бумаг" loading="lazy">
+        </picture>
           <h4>Оффер</h4>
           <p>После получения оффера ты получишь финальные наставления от ментора и начнёшь работать.
             В течение испытательного срока ментор остаётся с тобой на связи.</p>

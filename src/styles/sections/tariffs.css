@@ -21,6 +21,9 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    border: 2px solid transparent;
+    transition: border var(--transition-normal);
+
 
     span {
       color: var(--color-primary);
@@ -31,8 +34,9 @@
     }
   }
 
-  .proposal.special {
+  .proposal:hover {
     border: 2px solid var(--color-primary);
+    cursor: pointer;
   }
 
   @media (min-width: 1900px) {
