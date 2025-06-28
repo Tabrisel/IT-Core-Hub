@@ -12,6 +12,7 @@
     "vite": "^6.3.5"
   },
   "dependencies": {
-    "esbuild": "^0.25.5"
+    "esbuild": "^0.25.5",
+    "swiper": "^11.2.10"
   }
 }

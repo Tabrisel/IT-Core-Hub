@@ -7,6 +7,7 @@
   max-width: var(--container-max-width);
   background-image: linear-gradient(to right, var(--color-light-secondary), var(--color-light-tertiary));
   border-radius: var(--border-radius-md);
+  overflow: hidden;
 }
 
 .box-skills {
@@ -14,6 +15,7 @@
   display: flex;
   flex-direction: column;
   gap: var(--spacing-lg);
+  width: 100%;
 
   .first-row,
   .second-row {
@@ -24,15 +26,48 @@
   }
 
   .card {
-    padding: var(--spacing-xl);
+    padding: var(--spacing-2xl);
     width: 100%;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    background: var(--color-card);
+    background: rgba(255, 255, 255, 0.693);
     border-radius: var(--border-radius-md);
     box-sizing: border-box;
     font-size: var(--font-size-xl);
-    color: var(--color-black);
-    white-space: nowrap;
+    color: var(--color-headers);
+    white-space: normal;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    box-shadow:
+      inset -0.75px -0.5px rgba(255, 255, 255, 0.1),
+      inset +0.75px +0.5px rgba(255, 255, 255, 0.025);
+    position: relative;
+    border: 2px solid rgba(154, 99, 99, 0.46);
+  }
+
+  .swiper {
+    width: 100%;
+  }
+
+  .swiper-container {
+    width: 55%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .swiper-wrapper {
+    transition-timing-function: linear !important;
+  }
+
+  .swiper-slide-active,
+  .swiper-slide-duplicate-active {
+    transform: scale(1);
+    opacity: 1;
   }
 
   @media (min-width: 1900px) {
@@ -48,27 +83,28 @@
   }
 }
 
-  @media (max-width: 1440px) {
-    #skills {
-      overflow: hidden;
+@media (max-width: 1440px) {
+  #skills {
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 650px) {
+  #skills {
+
+    .box-skills {
+      padding-top: var(--spacing-xl);
+    }
+
+    .box-skills,
+    .first-row {
+      gap: var(--spacing-xs);
+    }
+
+    .card {
+      padding: var(--spacing-xl);
+      font-size: var(--font-size-sm);
+      height: 80px;
     }
   }
-
-  @media (max-width: 650px) {
-    #skills {
-
-      .box-skills {
-        padding-top: var(--spacing-xl);
-      }
-
-      .box-skills,
-      .first-row {
-        gap: var( --spacing-xs);
-      }
-
-      .card {
-        padding: var(--spacing-xl);
-        font-size: var(--font-size-sm);
-      }
-    }
-  }
+}

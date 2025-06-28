@@ -4,6 +4,87 @@ const yearSpan = document.getElementById("current-year");
 const currentYear = new Date().getFullYear();
 yearSpan.textContent = currentYear;
 
+document.addEventListener("DOMContentLoaded", function () {
+  if (typeof Swiper !== "undefined") {
+    const swiperRight = new Swiper(".skills-swiper-right", {
+      slidesPerView: 2,
+      spaceBetween: 10,
+      speed: 5000,
+      loop: true,
+      centeredSlides: true,
+      autoplay: {
+        delay: 0,
+        enabled: true,
+      },
+      breakpoints: {
+        480: {
+          slidesPerView: 3.5,
+          spaceBetween: 15,
+        },
+        650: {
+          slidesPerView: 3,
+          spaceBetween: 15,
+        },
+        768: {
+          slidesPerView: 4,
+          spaceBetween: 15,
+        },
+        1024: {
+          slidesPerView: 5,
+          spaceBetween: 20,
+        },
+        1440: {
+          slidesPerView: 4,
+          spaceBetween: 20,
+        },
+        1900: {
+          slidesPerView: 4.5,
+          spaceBetween: 25,
+        },
+      },
+    });
+
+    const swiperLeft = new Swiper(".skills-swiper-left", {
+      slidesPerView: 2,
+      spaceBetween: 10,
+      speed: 4000,
+      loop: true,
+      centeredSlides: true,
+      autoplay: {
+        delay: 0,
+        enabled: true,
+        reverseDirection: true,
+      },
+      breakpoints: {
+        480: {
+          slidesPerView: 3.5,
+          spaceBetween: 15,
+        },
+        650: {
+          slidesPerView: 3,
+          spaceBetween: 15,
+        },
+        768: {
+          slidesPerView: 4,
+          spaceBetween: 15,
+        },
+        1024: {
+          slidesPerView: 5,
+          spaceBetween: 20,
+        },
+        1440: {
+          slidesPerView: 4,
+          spaceBetween: 20,
+        },
+        1900: {
+          slidesPerView: 4.5,
+          spaceBetween: 25,
+        },
+      },
+    });
+  }
+});
+
 // // Бургер-меню
 // document.addEventListener("DOMContentLoaded", function () {
 //   const burger = document.querySelector(".burger");
