@@ -1,4 +1,6 @@
 import "./style.css";
+import Swiper from "swiper/bundle";
+import "swiper/css/bundle";
 
 const yearSpan = document.getElementById("current-year");
 const currentYear = new Date().getFullYear();
@@ -79,6 +81,41 @@ document.addEventListener("DOMContentLoaded", function () {
         1900: {
           slidesPerView: 4.5,
           spaceBetween: 25,
+        },
+      },
+    });
+
+    // Инициализация Swiper для команды
+    const teamSwiper = new Swiper(".swiper.team", {
+      speed: 2000,
+      slidesPerView: 2,
+      slidesPerGroup: 1,
+      spaceBetween: 12,
+      loop: true,
+      loopedSlidesLimit: null,
+
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      allowTouchMove: false,
+      breakpoints: {
+        480: {
+          slidesPerView: 2,
+          spaceBetween: 12,
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 24,
+        },
+        1024: {
+          slidesPerView: 3,
+        },
+        1200: {
+          slidesPerView: 4,
+        },
+        1900: {
+          slidesPerView: 5,
         },
       },
     });

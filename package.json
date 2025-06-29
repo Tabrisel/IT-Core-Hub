@@ -13,6 +13,6 @@
   },
   "dependencies": {
     "esbuild": "^0.25.5",
-    "swiper": "^11.2.10"
+    "swiper": "^8.4.7"
   }
 }
