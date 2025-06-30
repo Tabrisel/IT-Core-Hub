@@ -21,6 +21,17 @@
   .target-form {
     width: 100%;
     box-sizing: border-box;
+
+    h3 {
+      font-size: 28px;
+      font-weight: 500;
+      margin-bottom: 8px;
+    }
+
+    p {
+      font-size: 18px;
+      margin-bottom: 24px;
+    }
   }
 
   input {
@@ -152,6 +163,15 @@
 
 @media (max-width: 1440px) and (min-width: 1200px) {
 
+  #second-form .target-form h3 {
+    font-size: 26px;
+    font-weight: 500;
+  }
+
+  #second-form .target-form p {
+    font-size: 18px;
+  }
+
   .form-section h2,
   .faq-section h2 {
     font-size: 28px;
@@ -186,6 +206,15 @@
 }
 
 @media (max-width: 1920px) and (min-width: 1440px) {
+
+  #second-form .target-form h3 {
+    font-size: 26px;
+    font-weight: 500;
+  }
+
+  #second-form .target-form p {
+    font-size: 18px;
+  }
 
   .form-section h2,
   .faq-section h2 {
@@ -249,12 +278,13 @@
   }
 
   #second-form .target-form h3 {
-    font-size: 16px;
+    font-size: 20px;
+    font-weight: 500;
     margin-bottom: 4px;
   }
 
   #second-form .target-form p {
-    font-size: 12px;
+    font-size: 14px;
     margin-bottom: 0;
     font-weight: 500;
     color: var(--color-text-primary);
@@ -290,6 +320,15 @@
 }
 
 @media (max-width: 1024px) and (min-width: 650px) {
+
+  #second-form .target-form h3 {
+    font-size: 24px;
+    font-weight: 500;
+  }
+
+  #second-form .target-form p {
+    font-size: 16px;
+  }
 
   .form-section h2,
   .faq-section h2 {

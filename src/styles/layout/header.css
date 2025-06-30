@@ -38,7 +38,7 @@ nav {
 nav .nav__list {
   color: var(--color-dark-tertiary);
   padding: 0;
-  padding-right: var(--spacing-xl);
+  padding-right: var(--spacing-3xl);
   margin: 0;
   height: 100%;
   width: 100%;
@@ -222,6 +222,12 @@ nav .nav__list li:hover a {
   background: var(--color-light-tertiary);
   transform: scale(1.05);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 1500px) {
+  nav .nav__list {
+    padding-right: var(--spacing-xl);
+  }
 }
 
 @media (max-width: 1300px) {

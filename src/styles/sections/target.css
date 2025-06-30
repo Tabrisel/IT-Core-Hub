@@ -28,9 +28,17 @@ div .target-form {
   border-radius: 16px;
   background: var(--color-card);
 
+  h3 {
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 8px;
+  }
+
   p {
+    font-size: 18px;
     font-weight: 500;
     color: var(--color-text-primary);
+    margin-bottom: 24px;
   }
 
   form {
@@ -54,7 +62,8 @@ div .target-container {
     position: absolute;
     bottom: 0;
     right: 0;
-    z-index: 0;;
+    z-index: 0;
+    ;
   }
 }
 
@@ -185,6 +194,11 @@ div .companies {
   }
 
   .target-form h3 {
+    font-size: 26px;
+    font-weight: 500;
+  }
+
+  .target-form p {
     font-size: 18px;
   }
 
@@ -229,6 +243,11 @@ div .companies {
   }
 
   .target-form h3 {
+    font-size: 26px;
+    font-weight: 500;
+  }
+
+  .target-form p {
     font-size: 18px;
   }
 
@@ -267,7 +286,12 @@ div .companies {
   }
 
   .target-form h3 {
-    font-size: 18px;
+    font-size: 24px;
+    font-weight: 500;
+  }
+
+  .target-form p {
+    font-size: 16px;
   }
 
   .target-form input,
@@ -315,6 +339,11 @@ div .companies {
   }
 
   .target-form h3 {
+    font-size: 22px;
+    font-weight: 500;
+  }
+
+  .target-form p {
     font-size: 16px;
   }
 
@@ -357,12 +386,13 @@ div .companies {
     }
 
     .target-form h3 {
-      font-size: 16px;
+      font-size: 20px;
+      font-weight: 500;
       margin-bottom: 4px;
     }
 
     .target-form p {
-      font-size: 12px;
+      font-size: 14px;
       margin-bottom: 0;
       font-weight: 500;
       color: var(--color-text-primary);
