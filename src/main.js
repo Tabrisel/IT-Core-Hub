@@ -109,7 +109,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     const teamSwiper = new Swiper(".swiper.team", {
-      speed: 2000,
+      speed: 1000,
       slidesPerView: 2,
       slidesPerGroup: 1,
       spaceBetween: 12,
@@ -144,70 +144,70 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
-  // Бургер-меню
-  const burger = document.querySelector(".burger");
-  const nav = document.querySelector(".nav__list");
-  const closeMenuBtn = document.querySelector(".close-menu");
-  const closeBtn = document.querySelector(".close-btn");
-  const menuCloseBtn = document.querySelector(".menu-close-btn");
-  const headerBox = document.querySelector(".header-box");
+// Бургер-меню
+const burger = document.querySelector(".burger");
+const nav = document.querySelector(".nav__list");
+const closeMenuBtn = document.querySelector(".close-menu");
+const closeBtn = document.querySelector(".close-btn");
+const menuCloseBtn = document.querySelector(".menu-close-btn");
+const headerBox = document.querySelector(".header-box");
 
-  if (burger && nav) {
-    burger.addEventListener("click", function () {
-      const isActive = burger.classList.contains("active");
-      
-      burger.classList.toggle("active");
-      nav.classList.toggle("active");
-      document.body.classList.toggle("menu-open");
-      
-      // Предотвращаем скролл страницы когда меню открыто
-      if (!isActive) {
-        document.body.style.overflow = 'hidden';
-      } else {
-        document.body.style.overflow = '';
-      }
-    });
+if (burger && nav) {
+  burger.addEventListener("click", function () {
+    const isActive = burger.classList.contains("active");
 
-    // Функция закрытия меню
-    function closeMenu() {
-      burger.classList.remove("active");
-      nav.classList.remove("active");
-      document.body.classList.remove("menu-open");
-      document.body.style.overflow = '';
+    burger.classList.toggle("active");
+    nav.classList.toggle("active");
+    document.body.classList.toggle("menu-open");
+
+    // Предотвращаем скролл страницы когда меню открыто
+    if (!isActive) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
     }
+  });
 
-    // Закрытие меню по кнопке закрытия
-    if (closeMenuBtn) {
-      closeMenuBtn.addEventListener("click", closeMenu);
-    }
-
-    // Закрытие меню по круглому крестику
-    if (closeBtn) {
-      closeBtn.addEventListener("click", closeMenu);
-    }
-
-    // Закрытие меню по кнопке внутри меню
-    if (menuCloseBtn) {
-      menuCloseBtn.addEventListener("click", closeMenu);
-    }
-
-    // Закрытие меню при клике на ссылку навигации
-    const navLinks = nav.querySelectorAll("a:not(.social-link)");
-    navLinks.forEach((link) => {
-      link.addEventListener("click", closeMenu);
-    });
-
-    // Закрытие меню при клике вне его
-    document.addEventListener("click", function (e) {
-      if (!headerBox?.contains(e.target) && !nav.contains(e.target)) {
-        closeMenu();
-      }
-    });
-
-    // Закрытие меню при нажатии Escape
-    document.addEventListener("keydown", function (e) {
-      if (e.key === "Escape" && nav.classList.contains("active")) {
-        closeMenu();
-      }
-    });
+  // Функция закрытия меню
+  function closeMenu() {
+    burger.classList.remove("active");
+    nav.classList.remove("active");
+    document.body.classList.remove("menu-open");
+    document.body.style.overflow = "";
   }
+
+  // Закрытие меню по кнопке закрытия
+  if (closeMenuBtn) {
+    closeMenuBtn.addEventListener("click", closeMenu);
+  }
+
+  // Закрытие меню по круглому крестику
+  if (closeBtn) {
+    closeBtn.addEventListener("click", closeMenu);
+  }
+
+  // Закрытие меню по кнопке внутри меню
+  if (menuCloseBtn) {
+    menuCloseBtn.addEventListener("click", closeMenu);
+  }
+
+  // Закрытие меню при клике на ссылку навигации
+  const navLinks = nav.querySelectorAll("a:not(.social-link)");
+  navLinks.forEach((link) => {
+    link.addEventListener("click", closeMenu);
+  });
+
+  // Закрытие меню при клике вне его
+  document.addEventListener("click", function (e) {
+    if (!headerBox?.contains(e.target) && !nav.contains(e.target)) {
+      closeMenu();
+    }
+  });
+
+  // Закрытие меню при нажатии Escape
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape" && nav.classList.contains("active")) {
+      closeMenu();
+    }
+  });
+}

@@ -38,6 +38,10 @@ footer .roots {
   bottom: 0;
   font-size: var(--font-size-lg);
   color: var(--color-dark-quaternary);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  line-height: 1.3;
 }
 
 footer .nav__list {
@@ -48,6 +52,7 @@ footer .nav__list {
   font-size: var(--font-size-base);
   color: var(--color-dark-primary);
   padding-right: 0;
+  user-select: none;
 }
 
 footer .nav__list a {
@@ -88,6 +93,7 @@ footer .nav__list li:hover a {
   footer .roots {
     left: 8px;
     font-size: 10px;
+    gap: 2px;
   }
 
   footer .navigations {

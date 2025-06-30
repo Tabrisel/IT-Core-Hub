@@ -48,6 +48,7 @@ nav .nav__list {
   justify-content: space-between;
   gap: var(--spacing-xl);
   list-style: none;
+  user-select: none;
 }
 
 nav .nav__list a {
@@ -70,6 +71,7 @@ nav .nav__list li:hover a {
   background-position: center;
   position: relative;
   z-index: var(--z-tooltip);
+  user-select: none;
 }
 
 .logo:hover {
@@ -85,6 +87,7 @@ nav .nav__list li:hover a {
   padding: 10px;
   background: none;
   border: none;
+  user-select: none;
 }
 
 .burger:hover {
@@ -554,7 +557,7 @@ nav .nav__list li:hover a {
   /* Позиционирование крестика на мобильных */
   .menu-open .close-btn {
     display: flex !important;
-    top: var(--spacing-lg) !important;
+    top: 25px;
     right: var(--spacing-sm) !important;
     width: 36px !important;
     height: 36px !important;
@@ -568,13 +571,15 @@ nav .nav__list li:hover a {
 
   /* Отдельное лого для мобильных */
   .mobile-logo-single {
+    margin-left: auto;
+    margin-right: auto;
     display: none;
     background-image: url('/icons/logo.svg');
     background-repeat: no-repeat;
     background-position: left center;
     background-size: contain;
-    width: 160px;
-    height: 40px;
+    width: 180px;
+    height: 50px;
     min-height: 40px;
     flex-shrink: 0;
     order: -2;

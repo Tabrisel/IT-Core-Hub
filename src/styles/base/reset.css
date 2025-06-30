@@ -6,6 +6,13 @@ html {
   box-sizing: border-box;
 }
 
+/* Отключить выделение для интерактивных элементов */
+a[role="button"],
+[tabindex="0"],
+[onclick] {
+  user-select: none;
+}
+
 body {
   position: relative;
   font-size: var(--font-size-sm);
@@ -112,6 +119,7 @@ button {
   background-color: var(--color-dark-primary);
   cursor: pointer;
   transition: background-color var(--transition-fast);
+  user-select: none;
 }
 
 button:hover {

@@ -39,6 +39,14 @@
     cursor: pointer;
   }
 
+  .proposal {
+    user-select: none;
+  }
+
+  .proposal:hover button {
+    background-color: var(--color-dark-secondary);
+  }
+
   @media (min-width: 1900px) {
     .proposal {
       padding: 48px;

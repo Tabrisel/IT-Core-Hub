@@ -45,6 +45,10 @@
     border: 1px solid var(--color-primary);
   }
 
+  .social-card {
+    user-select: none;
+  }
+
   .social-card:nth-child(4n + 1) .social-icon {
     background-color: var(--color-danger);
     background-image: url('/icons/youtube.svg');
