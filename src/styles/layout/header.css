@@ -263,7 +263,7 @@ nav .nav__list li:hover a {
     background: var(--color-card);
     flex-direction: column;
     padding: var(--spacing-sm);
-    gap: var(--spacing-lg);
+    gap: 0;
     z-index: var(--z-modal);
     opacity: 0;
     visibility: hidden;
@@ -284,14 +284,18 @@ nav .nav__list li:hover a {
     display: block;
     width: 100%;
     text-align: left;
-    padding: var(--spacing-sm);
+    padding: var(--spacing-md);
     border-radius: var(--border-radius-xxs);
     transition: background-color 0.3s ease;
+    font-weight: var(--font-weight-light);
+    font-size: var(--font-size-base);
+    color: var(--color-dark-primary);
+    text-decoration: none;
   }
 
   nav .nav__list li a:hover {
     background-color: var(--color-light-tertiary);
-    color: var(--color-headers) !important;
+    color: var(--color-dark-primary) !important;
   }
 
   nav .nav__list.active {
@@ -359,7 +363,7 @@ nav .nav__list li:hover a {
   .nav__list .mobile-menu-extras {
     display: flex !important;
     flex-direction: column;
-    gap: var(--spacing-lg);
+    gap: 0;
     margin-top: var(--spacing-md);
     padding-top: var(--spacing-md);
     border-top: 1px solid var(--color-border);
@@ -520,26 +524,26 @@ nav .nav__list li:hover a {
   }
 
   .nav__list .mobile-socials h5 {
-    font-size: 14px !important;
-    margin-bottom: var(--spacing-sm) !important;
+    font-size: 18px !important;
+    margin-bottom: var(--spacing-md) !important;
   }
 
   .nav__list .social-links {
-    gap: var(--spacing-xs) !important;
+    gap: var(--spacing-sm) !important;
   }
 
   .nav__list .social-link {
-    padding: var(--spacing-xs) !important;
+    padding: var(--spacing-sm) !important;
   }
 
   .nav__list .social-link .social-icon {
-    width: 24px !important;
-    height: 24px !important;
-    background-size: 12px !important;
+    width: 36px !important;
+    height: 36px !important;
+    background-size: 18px !important;
   }
 
   .nav__list .social-link span {
-    font-size: 12px !important;
+    font-size: 16px !important;
   }
 
   /* Мобильное лого для экранов до 650px */

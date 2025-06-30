@@ -109,7 +109,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     const teamSwiper = new Swiper(".swiper.team", {
-      speed: 1000,
+      speed: 700,
       slidesPerView: 2,
       slidesPerGroup: 1,
       spaceBetween: 12,
