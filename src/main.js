@@ -7,6 +7,29 @@ const currentYear = new Date().getFullYear();
 yearSpan.textContent = currentYear;
 
 document.addEventListener("DOMContentLoaded", function () {
+  const faqQuestions = document.querySelectorAll(".question-header");
+
+  faqQuestions.forEach((header) => {
+    header.addEventListener("click", function () {
+      const questionCard = this.parentElement;
+      const answer = questionCard.querySelector(".answer");
+      const arrow = this.querySelector(".arrow");
+
+      faqQuestions.forEach((otherHeader) => {
+        if (otherHeader !== header) {
+          const otherAnswer =
+            otherHeader.parentElement.querySelector(".answer");
+          const otherArrow = otherHeader.querySelector(".arrow");
+          otherAnswer.classList.remove("open");
+          otherArrow.classList.remove("rotated");
+        }
+      });
+
+      answer.classList.toggle("open");
+      arrow.classList.toggle("rotated");
+    });
+  });
+
   if (typeof Swiper !== "undefined") {
     const swiperRight = new Swiper(".skills-swiper-right", {
       slidesPerView: 2,
@@ -85,7 +108,6 @@ document.addEventListener("DOMContentLoaded", function () {
       },
     });
 
-    // Инициализация Swiper для команды
     const teamSwiper = new Swiper(".swiper.team", {
       speed: 2000,
       slidesPerView: 2,
