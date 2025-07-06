@@ -114,4 +114,7 @@
   --z-modal: 1050;
   --z-popover: 1060;
   --z-tooltip: 1070;
+
+  /* Scroll offset for anchors */
+  --scroll-margin-top: 30px;
 }

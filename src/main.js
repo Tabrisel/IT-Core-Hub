@@ -196,7 +196,36 @@ if (burger && nav) {
   // Закрытие меню при клике на ссылку навигации
   const navLinks = nav.querySelectorAll("a:not(.social-link)");
   navLinks.forEach((link) => {
-    link.addEventListener("click", closeMenu);
+    link.addEventListener("click", function(e) {
+      const href = this.getAttribute("href");
+      
+      // Если это якорная ссылка
+      if (href && href.startsWith("#")) {
+        e.preventDefault();
+        
+        // Закрываем меню
+        closeMenu();
+        
+        // Ждем завершения анимации закрытия меню и переходим к якорю
+        setTimeout(() => {
+          // Восстанавливаем скролл
+          document.body.style.position = "";
+          document.body.style.top = "";
+          document.body.style.left = "";
+          document.body.style.width = "";
+          document.body.style.overflow = "";
+          
+          // Мгновенный переход к якорю без анимации
+          const targetElement = document.querySelector(href);
+          if (targetElement) {
+            targetElement.scrollIntoView({ behavior: "instant" });
+          }
+        }, 300); // Время анимации закрытия меню
+      } else {
+        // Для обычных ссылок просто закрываем меню
+        closeMenu();
+      }
+    });
   });
 
   // Закрытие меню при клике вне его
