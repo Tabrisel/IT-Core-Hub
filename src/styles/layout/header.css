@@ -88,6 +88,8 @@ nav .nav__list li:hover a {
   background: none;
   border: none;
   user-select: none;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .burger:hover {
@@ -133,6 +135,8 @@ nav .nav__list li:hover a {
   justify-content: center;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .close-btn:hover {
@@ -216,6 +220,8 @@ nav .nav__list li:hover a {
   transition: all 0.3s ease;
   flex-shrink: 0;
   order: initial;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .menu-close-btn:hover {
@@ -248,7 +254,6 @@ nav .nav__list li:hover a {
     right: 0;
     bottom: 0;
     background: rgba(255, 255, 255, 0.9);
-    backdrop-filter: blur(10px);
     z-index: -1;
     opacity: 0;
     transition: opacity 0.3s ease;
@@ -278,6 +283,8 @@ nav .nav__list li:hover a {
     pointer-events: none;
     overflow-y: auto;
     box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
   }
 
   /* Выравнивание ссылок в мобильном меню по левому краю */
@@ -297,6 +304,8 @@ nav .nav__list li:hover a {
     font-size: var(--font-size-base);
     color: var(--color-dark-primary);
     text-decoration: none;
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
   }
 
   nav .nav__list li a:hover {
@@ -357,6 +366,8 @@ nav .nav__list li:hover a {
     color: var(--color-text-primary);
     border-radius: var(--border-radius-xxs);
     transition: background-color 0.3s ease;
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
   }
 
   .close-menu:hover {
@@ -601,4 +612,14 @@ nav .nav__list li:hover a {
   .nav__list.active .mobile-logo-single {
     display: block !important;
   }
+}
+
+body.menu-open {
+  position: fixed;
+  width: 100vw;
+  overflow: hidden;
+  touch-action: none;
+  overscroll-behavior: none;
+  top: 0;
+  left: 0;
 }
