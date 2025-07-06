@@ -89,7 +89,7 @@ div .target-tags {
     align-items: center;
 
     .icon {
-      background-image: url('icons/checks.svg');
+      background-image: url('/icons/checks.svg');
       background-size: cover;
       width: 24px;
       height: 24px;
@@ -122,23 +122,23 @@ div .companies {
 }
 
 .companies div:nth-child(1) {
-  background-image: url('icons/wb.svg');
+  background-image: url('/icons/wb.svg');
 }
 
 .companies div:nth-child(2) {
-  background-image: url('icons/t2.svg');
+  background-image: url('/icons/t2.svg');
 }
 
 .companies div:nth-child(3) {
-  background-image: url('icons/lemana.svg');
+  background-image: url('/icons/lemana.svg');
 }
 
 .companies div:nth-child(4) {
-  background-image: url('icons/magnit.svg');
+  background-image: url('/icons/magnit.svg');
 }
 
 .companies div:nth-child(5) {
-  background-image: url('icons/mtc.svg');
+  background-image: url('/icons/mtc.svg');
 }
 
 @media (max-width: 1900px) {
