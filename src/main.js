@@ -41,6 +41,7 @@ document.addEventListener("DOMContentLoaded", function () {
         delay: 0,
         enabled: true,
       },
+      allowTouchMove: false,
       breakpoints: {
         480: {
           slidesPerView: 3.5,
@@ -80,6 +81,7 @@ document.addEventListener("DOMContentLoaded", function () {
         enabled: true,
         reverseDirection: true,
       },
+      allowTouchMove: false,
       breakpoints: {
         480: {
           slidesPerView: 3.5,
