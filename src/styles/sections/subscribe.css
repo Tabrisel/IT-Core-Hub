@@ -120,11 +120,11 @@
 
   #subscribe {
     .social-card {
-      padding: var(--spacing-xl);
+      padding: var(--spacing-md);
       min-height: 200px;
 
       p {
-        font-size: var(--spacing-xs);
+        font-size: var(--spacing-sm);
       }
 
       .social-icon {

@@ -579,7 +579,7 @@ nav .nav__list li:hover a {
   .menu-open .close-btn {
     display: flex !important;
     top: 25px;
-    right: var(--spacing-sm) !important;
+    right: var(--spacing-lg) !important;
     width: 36px !important;
     height: 36px !important;
     font-size: 18px !important;

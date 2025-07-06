@@ -76,7 +76,8 @@
 @media (max-width: 650px) {
   #our-approach {
     p {
-      font-size: var(--font-size-xxs);
+      font-size: 13px;
+      max-width: 245px;
     }
 
     .section-title p {
@@ -85,7 +86,7 @@
   }
 
   #our-approach .card {
-    min-height: 160px;
+    min-height: 165px;
   }
 
   #our-approach .card-icon {

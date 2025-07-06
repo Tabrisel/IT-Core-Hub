@@ -159,8 +159,8 @@
       gap: var(--spacing-xl);
 
       .boxes {
-        justify-content: flex-start;
-        gap: var(--spacing-5xl);
+        justify-content: space-between;
+        gap: var(--spacing-lg);
       }
     }
 
@@ -189,14 +189,14 @@
       }
 
       p {
-        font-size: 10px;
+        font-size: 13px;
         margin-top: 6px;
         margin-bottom: 0;
       }
     }
 
     .prices .boxes p {
-      font-size: 10px;
+      font-size: 12px;
       margin-top: 4px;
     }
 

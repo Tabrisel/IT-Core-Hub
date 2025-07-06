@@ -181,7 +181,7 @@
 
      .card:nth-child(2) picture {
       width: 230px;
-      height: 130px;
+      height: 80px;
       bottom: -15px;
     }
 
@@ -195,7 +195,7 @@
       .card.special picture {
       width: 183px;
       height: 156px;
-      right: 12px;
+      right: -37px;
     }
   }
 }
