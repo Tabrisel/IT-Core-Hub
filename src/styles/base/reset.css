@@ -55,7 +55,7 @@ h3 {
 }
 
 h4 {
-  font-size: var(--font-size-xl);
+  font-size: var(--font-size-lg);
 }
 
 h5 {
@@ -250,7 +250,7 @@ li:hover a {
   }
 
   h2 {
-    font-size: 26px;
+    font-size: 30px;
   }
 
   h3 {

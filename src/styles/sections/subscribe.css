@@ -19,8 +19,8 @@
     background: var(--color-card);
     position: relative;
     box-sizing: border-box;
-    padding: 48px;
-    min-height: 350px;
+    padding: 40px;
+    min-height: 285px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -105,7 +105,7 @@
   }
 
   #subscribe .socials p {
-    font-size: var(--font-size-base);
+    font-size: var(--font-size-sm);
   }
 }
 

@@ -56,7 +56,7 @@ div .target-container {
   width: 66.4%;
   flex-direction: column;
   justify-content: space-between;
-  gap: 107.5px;
+  gap: 80px;
 
   picture {
     position: absolute;
@@ -305,7 +305,8 @@ div .companies {
 
   div .target-container {
     picture {
-      right: -100px;
+      right: -196px;
+      bottom: -40px;
     }
   }
 }

@@ -6,7 +6,7 @@
   .cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: var(--spacing-md);
+    gap: var(--spacing-xl);
     width: 100%;
     max-width: var(--content-max-width);
     margin-top: var(--spacing-3xl);
@@ -37,8 +37,8 @@
   }
 
   .card:nth-child(2) picture {
-    width: 472px;
-    height: 261px;
+    width: 367px;
+    height: 202px;
     bottom: -15px;
     right: 0;
   }
@@ -57,8 +57,8 @@
       position: absolute;
       top: -30px;
       left: 0;
-      width: 366px;
-      height: 311px;
+      width: 265px;
+      height: 280px;
 
       img {
         width: 100%;
@@ -103,13 +103,13 @@
 
   #process-study {
     .card {
-      min-height: 440px;
+      min-height: 335px;
     }
   }
 
   #process-study .card:last-child picture {
-    width: 242px;
-    height: 301px;
+    width: 184px;
+    height: 263px;
     bottom: 24px;
     right: -15px;
   }
