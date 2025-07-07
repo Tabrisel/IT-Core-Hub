@@ -23,7 +23,7 @@
 
   .item {
     background: var(--color-card);
-    font-size: var(--font-size-xl);
+    font-size: var(--font-size-lg);
     position: relative;
     border-radius: var(--border-radius-md);
     padding: var(--spacing-3xl);
@@ -146,6 +146,7 @@
 
   #suitable-for .item small {
     font-size: var(--spacing-md);
+    max-width: 360px;
   }
 
   #suitable-for .a {

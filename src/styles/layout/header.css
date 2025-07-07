@@ -623,15 +623,3 @@ body.menu-open {
   top: 0;
   left: 0;
 }
-
-/* Для планшетов разрешаем touch-action для скролла в меню */
-@media (min-width: 501px) and (max-width: 1300px) {
-  body.menu-open {
-    touch-action: pan-y;
-  }
-
-  body.menu-open .nav__list.active {
-    touch-action: pan-y;
-    -webkit-overflow-scrolling: touch;
-  }
-}
