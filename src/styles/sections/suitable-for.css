@@ -16,7 +16,7 @@
     picture {
       position: absolute;
       right: 0;
-      top: 400px;
+      top: 369px;
       z-index: 1;
     }
   }
@@ -198,19 +198,19 @@
     picture {
       position: absolute;
       right: 0;
-      top: 98px;
+      top: 34px;
       width: 330px;
       height: 290px;
       z-index: 1;
 
       img {
-      width: 100%;
-      height: auto;
-      display: block;
+        width: 100%;
+        height: auto;
+        display: block;
       }
     }
 
-    .item text{
+    .item text {
       z-index: 2;
     }
   }
@@ -355,7 +355,7 @@
 
   #suitable-for .grid {
     picture {
-      top: 150px;
+      top: 104px;
       width: 250px;
       height: 250px;
     }

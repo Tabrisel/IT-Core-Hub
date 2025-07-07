@@ -104,7 +104,7 @@
   --arrow-size-mb: 20px;
   --social-icon-size: 70px;
   --input-height: 59px;
-  --textarea-min-height: 214px;
+  --textarea-min-height: 100px;
 
   /* Z-index */
   --z-dropdown: 1000;

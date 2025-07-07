@@ -51,11 +51,11 @@ div .target-container {
   overflow: hidden;
   position: relative;
   border-radius: 16px;
-  padding: 48px;
+  padding: 32px;
   display: flex;
   width: 66.4%;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   gap: 50px;
 
   picture {
@@ -81,7 +81,7 @@ div .target-tags {
 
   .tags {
     background: var(--color-tags);
-    padding: 24px;
+    padding: 16px;
     border-radius: 16px;
     display: flex;
     justify-content: space-between;
@@ -100,8 +100,8 @@ div .target-tags {
 .specialists-from {
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  justify-content: space-between;
+  gap: 12px;
+  justify-content: flex-start;
 }
 
 div .companies {

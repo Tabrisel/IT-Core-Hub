@@ -47,7 +47,7 @@ h1 {
 }
 
 h2 {
-  font-size: var(--font-size-3xl);
+  font-size: var(--font-size-2xl);
 }
 
 h3 {
@@ -147,7 +147,7 @@ li:hover a {
 
   p,
   .tags {
-    font-size: var(--font-size-base);
+    font-size: var(--font-size-lg);
   }
 }
 

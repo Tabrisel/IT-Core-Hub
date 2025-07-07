@@ -54,7 +54,7 @@
 
   .questions {
     width: 100%;
-    margin-top: var(--spacing-3xl);
+    margin-top: 0;
   }
 
   .text-card {
@@ -151,7 +151,7 @@
     width: 100%;
 
     .text-card {
-      font-size: var(--spacing-2xl);
+      font-size: var(--spacing-xl);
     }
   }
 

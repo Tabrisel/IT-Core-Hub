@@ -1,6 +1,5 @@
 form {
   color: var(--color-text-primary);
-  padding-top: var(--spacing-3xl);
   display: flex;
   flex-direction: column;
   gap: var(--form-gap);
@@ -35,7 +34,7 @@ textarea {
 textarea {
   min-height: var(--textarea-min-height);
   resize: none;
-  margin-bottom: var(--spacing-9xl);
+  margin-bottom: var(--spacing-2xl);
 }
 
 input:active,
